@@ -1,7 +1,7 @@
-import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
-import React from 'react';
 import Button from '../component/Button';
 import { images } from '../constants/Images';
+import Title from '../component/Title';
+import Footer from '../component/Footer';
 
 
 export default function products(props) {
@@ -9,9 +9,7 @@ export default function products(props) {
               <ImageBackground source={require("../assets/background.png")} style={styles.image}>
 
                 <View style={styles.main}>
-                    <View style={styles.title}>
-                        <Text style={styles.titleContent}>Le bateau de Thibault</Text>
-                    </View>
+                    <Title title="Le bateau de Thibault"></Title>
                     <View style={styles.contenu}>
                         <Text style={styles.boldText}>Vente en direct de notre bateau</Text>
                         <Text style={styles.boldText}>Produits selon la saison, Livraison sur Paris</Text>
@@ -30,9 +28,7 @@ export default function products(props) {
                     </View>
                     
                 </View>
-                <View style={styles.footer}>
-                    <Text>Powered by BTK Inc.</Text>
-                </View>
+                <Footer></Footer>
                 <StatusBar style="auto" />
                 </ImageBackground>
             </View>
@@ -82,7 +78,6 @@ const styles = StyleSheet.create({
       justifyContent: "flex-end",
       alignItems: "center"
     },
-
     image:{
         flex: 1,
         resizeMode: "cover",
