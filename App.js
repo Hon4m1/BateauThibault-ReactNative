@@ -1,15 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-// import { Provider } from 'react-redux';
-// import store from './store/configureStore';
 import { Button, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { NavigationContainer, StackActions } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-
-//import { Provider } from 'react-redux';
-//import store from './store/configurationStore';
-
 import Home from './screen/Home'
+import TourteauLinguine from './screen/Recipes/TourteauLinguine'
+import { ReactReduxContext } from 'react-redux';
+/*import (Provider) from 'react-redux'
+import store from "./store/configurestore.js"*/
 import batDeLaBrise from './screen/bateaux/deLaBrise'
 import Products from './screen/Products'
 import Bateaux from './screen/Bateaux'
@@ -28,8 +26,7 @@ export default function App() {
           <Stack.Screen name="recettes" component={ Recettes } />
           <Stack.Screen name="restaurants" component={ Restaurants } />
           <Stack.Screen name="De La Brise" component={ batDeLaBrise } />
-
-
+          <Stack.Screen name="TourteauLinguine" component={ TourteauLinguine } />
         </Stack.Navigator>
       </NavigationContainer>
   );
