@@ -17,14 +17,14 @@ import Restaurants from './screen/Restaurants'
 const Stack = createStackNavigator();
 
 export default function App() {
-  return (   
+  return (
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false}}>
           <Stack.Screen name="home" component={ Home } />
           <Stack.Screen name="products" component={ Products } />
           <Stack.Screen name="bateaux" component={ Bateaux } />
-          <Stack.Screen name="recettes" component={ Recettes } />
           <Stack.Screen name="restaurants" component={ Restaurants } />
+          <Stack.Screen name="recettes" component={ Recettes } />
           <Stack.Screen name="De La Brise" component={ batDeLaBrise } />
           <Stack.Screen name="TourteauLinguine" component={ TourteauLinguine } />
         </Stack.Navigator>

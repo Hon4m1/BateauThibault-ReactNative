@@ -25,51 +25,51 @@ const images = {
     },
     aquilon_icon: {
         imgName: 'aquilon_icon',
-        url: require("../assets/aquilon_icon.png")
+        url: require("../assets/icons/aquilon_icon.png")
     },
     barRecette_icon: {
         imgName: 'barRecette_icon',
-        url: require("../assets/barRecette_icon.png")
+        url: require("../assets/icons/barRecette_icon.png")
     },
     bistrotLandais_icon: {
         imgName: 'bistrotLandais_icon',
-        url: require("../assets/bistrotLandais_icon.png")
+        url: require("../assets/icons/bistrotLandais_icon.png")
     },
     deLaBrise_icon: {
         imgName: 'deLaBrise_icon',
-        url: require("../assets/deLaBrise_icon.png")
+        url: require("../assets/icons/deLaBrise_icon.png")
     },
     desGascons_icon: {
         imgName: 'desGascons_icon',
-        url: require("../assets/desGascons_icon.png")
+        url: require("../assets/icons/desGascons_icon.png")
     },
     duSommelier_icon: {
         imgName: 'duSommelier_icon',
-        url: require("../assets/duSommelier_icon.png")
+        url: require("../assets/icons/duSommelier_icon.png")
     },
     fousDeLIle_icon: {
         imgName: 'fousDeLIle_icon',
-        url: require("../assets/fousDeLIle_icon.png")
+        url: require("../assets/icons/fousDeLIle_icon.png")
     },
     gastMicher_icon: {
         imgName: 'gastMicher_icon',
-        url: require("../assets/gastMicher_icon.png")
+        url: require("../assets/icons/gastMicher_icon.png")
     },
     homardRecette_icon: {
         imgName: 'homardRecette_icon',
-        url: require("../assets/homardRecette_icon.png")
+        url: require("../assets/icons/homardRecette_icon.png")
     },
     saintJacques_icon: {
         imgName: 'saintJacques_icon',
-        url: require("../assets/saintJacques_icon.png")
+        url: require("../assets/icons/saintJacques_icon.png")
     },
     saphir_icon: {
         imgName: 'saphir_icon',
-        url: require("../assets/saphir_icon.png")
+        url: require("../assets/icons/saphir_icon.png")
     },
     villa9Trois_icon: {
         imgName: 'villa9Trois_icon',
-        url: require("../assets/villa9Trois_icon.png")
+        url: require("../assets/icons/villa9Trois_icon.png")
     },
 }
 

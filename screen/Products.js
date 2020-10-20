@@ -1,7 +1,9 @@
+import React from 'react';
 import Button from '../component/Button';
 import { images } from '../constants/Images';
 import Title from '../component/Title';
 import Footer from '../component/Footer';
+import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
 
 
 export default function products(props) {
@@ -26,28 +28,28 @@ export default function products(props) {
                             navigation={props.navigation}
                             style={styles.button}></Button>
                     </View>
-                    
+
                 </View>
-                <Footer></Footer>
                 <StatusBar style="auto" />
                 </ImageBackground>
+                <Footer></Footer>
             </View>
     )
 }
 
 /*export default class Products extends ReactComponent {
-    
+
     state = {
         data: []
     }
-    
-    
-    
+
+
+
     render(){
     return(
         <View style="container">
             <Header navigation={this.props.navigation}>
-            <Text style={{marginVertical:10, textAlign:"center"}}>Choississez</Text> 
+            <Text style={{marginVertical:10, textAlign:"center"}}>Choississez</Text>
             </Header>
             <View style={{flex:1}}>
                 <Button text="Poissons"
