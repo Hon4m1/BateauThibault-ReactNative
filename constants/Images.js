@@ -35,6 +35,10 @@ const images = {
         imgName: 'bistrotLandais_icon',
         url: require("../assets/icons/bistrotLandais_icon.png")
     },
+    bistrotLandais: {
+        imgName: 'bistrotLandais',
+        url: require("../assets/images/Restaurants/bistrotLandais.png")
+    },
     deLaBrise_icon: {
         imgName: 'deLaBrise_icon',
         url: require("../assets/icons/deLaBrise_icon.png")
@@ -43,13 +47,25 @@ const images = {
         imgName: 'desGascons_icon',
         url: require("../assets/icons/desGascons_icon.png")
     },
+    desGascons: {
+        imgName: 'desGascons',
+        url: require("../assets/images/Restaurants/desGascons.png")
+    },
     duSommelier_icon: {
         imgName: 'duSommelier_icon',
         url: require("../assets/icons/duSommelier_icon.png")
     },
+    duSommelier: {
+        imgName: 'duSommelier',
+        url: require("../assets/images/Restaurants/duSommelier.png")
+    },
     fousDeLIle_icon: {
         imgName: 'fousDeLIle_icon',
         url: require("../assets/icons/fousDeLIle_icon.png")
+    },
+    fousDeLIle: {
+        imgName: 'fousDeLIle',
+        url: require("../assets/images/Restaurants/fousDeLIle.png")
     },
     gastMicher_icon: {
         imgName: 'gastMicher_icon',
@@ -71,6 +87,10 @@ const images = {
         imgName: 'villa9Trois_icon',
         url: require("../assets/icons/villa9Trois_icon.png")
     },
+    villa9Trois: {
+        imgName: 'villa9Trois',
+        url: require("../assets/images/Restaurants/villa9Trois.png")
+    }
 }
 
 export {images};

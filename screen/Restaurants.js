@@ -21,27 +21,27 @@ export default function restaurants(props) {
                 <View style={styles.buttons}>
                     <View style={styles.buttons1}>
                         <Button text="Bistrot des Gascons" 
-                        screen={"restaurants/desGascons"}
+                        screen={"desGascons"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                         <Button text="Les fous de l'île"
-                        screen={"restaurants/fousDeLIle"}
+                        screen={"fousDeLIle"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
                     <View style={styles.buttons1}>
                         <Button text="Bistrot Landais" 
-                        screen={"restaurants/bistrotLandais"}
+                        screen={"bistrotLandais"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                         <Button text="Villa 9-trois"
-                        screen={"restaurants/villa9Trois"}
+                        screen={"villa9Trois"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
                     <View style={styles.buttons2}>
                         <Button text="Bistrot du Sommelier" 
-                        screen={"restaurants/BistrotDuSommelier"}
+                        screen={"bistrotDuSommelier"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                         <Button text="Devenez Partenaire!" 

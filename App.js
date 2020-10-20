@@ -13,6 +13,12 @@ import Products from './screen/Products'
 import Bateaux from './screen/Bateaux'
 import Recettes from './screen/Recettes'
 import Restaurants from './screen/Restaurants'
+import desGascons from './screen/Restaurants/desGascons'
+import bistrotDuSommelier from './screen/Restaurants/bistrotDuSommelier'
+import bistrotLandais from './screen/Restaurants/bistrotLandais'
+import fousDeLIle from './screen/Restaurants/fousDeLIle'
+import villa9Trois from './screen/Restaurants/villa9Trois'
+
 
 const Stack = createStackNavigator();
 
@@ -27,6 +33,11 @@ export default function App() {
           <Stack.Screen name="recettes" component={ Recettes } />
           <Stack.Screen name="De La Brise" component={ batDeLaBrise } />
           <Stack.Screen name="TourteauLinguine" component={ TourteauLinguine } />
+          <Stack.Screen name="desGascons" component={ desGascons } />
+          <Stack.Screen name="bistrotDuSommelier" component={ bistrotDuSommelier } />
+          <Stack.Screen name="bistrotLandais" component={ bistrotLandais } />
+          <Stack.Screen name="fousDeLIle" component={ fousDeLIle } />
+          <Stack.Screen name="villa9Trois" component={ villa9Trois } />
         </Stack.Navigator>
       </NavigationContainer>
   );

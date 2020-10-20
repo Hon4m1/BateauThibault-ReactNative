@@ -1,13 +1,15 @@
 import React from 'react';
-import Title from "../component/Title";
-import { View, StyleSheet, Text } from "react-native";
-import Footer from '../component/Footer';
+import Title from "../../component/Title";
+import { StyleSheet, Text, View, ImageBackground, Image } from 'react-native';
+import Footer from '../../component/Footer';
+import { images } from '../../constants/Images';
 
-export default function restaurant(props, place){
+export default function villa9Trois(props){
     return(
         <View>
-            <Title title={place}></Title>
-            <image style={styles.img} src={require({props})}></image>
+            <ImageBackground source={require("../../assets/background.png")} style={styles.image}></ImageBackground>
+            <Title title="Villa 9-Trois"></Title>
+            <Image style={styles.img} fadeDuration={1000} source={require("../../assets/images/Restaurants/villa9Trois.png")}></Image>
             <View>
                 <Text>XXX YYY ZZZ</Text>
                 <Text>Qu'il est chaud le soleil</Text>
@@ -28,8 +30,13 @@ export default function restaurant(props, place){
     )
 };
 
-    const style=StyleSheet.create({
-        img: {
-
-        }
-    })
+const styles=StyleSheet.create({
+    image:{
+        flex: 1,
+        resizeMode: "cover",
+        justifyContent: "center"
+    },
+    img: {
+        alignSelf: "center"
+    }
+})
