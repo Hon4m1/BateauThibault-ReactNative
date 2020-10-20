@@ -1,18 +1,12 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import React from 'react';
+import Title from "../component/Title";
 
 export default function products(props) {
-    return(
-        <View style={styles.title}>
-                <Text>Le bateau de Thibault</Text>
+    return (
+        <View>
+            <Title title="toto"></Title>
         </View>
     )
 }
 
-const styles = StyleSheet.create({
-    title: {
-        flex: 1,
-        alignSelf: "center",
-        marginTop: 50
-      },
-});

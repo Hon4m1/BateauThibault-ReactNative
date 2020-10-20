@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
 import Button from '../component/Button';
 import React from 'react';
+import Title from '../component/Title'
+import Footer from '../component/Footer'
 
 export default function home(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../assets/background.png")} style={styles.image}>
 
                 <View style={styles.main}>
-                    <View style={styles.title}>
-                        <Text style={styles.titleContent}>Le bateau de Thibault</Text>
-                    </View>
+                    <Title title="Le bateau de Thibault"></Title>
                     <View style={styles.contenu}>
                         <Text style={styles.boldText}>Vente en direct de notre bateau</Text>
                         <Text style={styles.boldText}>Produits selon la saison, Livraison sur Paris</Text>
@@ -43,9 +43,7 @@ export default function home(props) {
                         style={styles.button}></Button>
                     </View>
                 </View>
-                <View style={styles.footer}>
-                    <Text>Powered by blabla</Text>
-                </View>
+                <Footer></Footer>
                 <StatusBar style="auto" />
                 </ImageBackground>
             </View>
@@ -63,26 +61,10 @@ const styles = StyleSheet.create({
     buttons: {
       flex: 4,
     },
-    footer: {
-      flex: 1,
-      justifyContent: "flex-end",
-      alignItems: "center"
-    },
-
     image:{
         flex: 1,
         resizeMode: "cover",
         justifyContent: "center"
-    },
-    title: {
-      flex: 1,
-      alignSelf: "center",
-      marginTop: 50,
-    },
-    titleContent: {
-        fontStyle: 'italic',
-        fontSize: 25,
-        color: 'white'
     },
     boldText: {
         fontWeight: "bold"
