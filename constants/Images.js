@@ -71,6 +71,22 @@ const images = {
         imgName: 'villa9Trois_icon',
         url: require("../assets/icons/villa9Trois_icon.png")
     },
+    aquilon: {
+      imgName: 'aquilon',
+      url: require("../assets/images/aquilon.png")
+    },
+    deLaBrise: {
+      imgName: 'deLaBrise',
+      url: require("../assets/images/deLaBrise.png")
+    },
+    gastMicher: {
+      imgName: 'gastMicher',
+      url: require("../assets/images/gastMicher.png")
+    },
+    saphir: {
+      imgName: 'saphir',
+      url: require("../assets/images/saphir.png")
+    },
 }
 
 export {images};

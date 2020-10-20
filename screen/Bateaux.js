@@ -21,7 +21,7 @@ export default function bateaux(props) {
                 </View>
                 <View style={styles.buttons}>
                     <View style={styles.buttons1}>
-                        <Button text="De La Brise" 
+                        <Button text="De La Brise"
                         image={images.deLaBrise_icon.url}
                         screen={"bateaux/deLaBrise"}
                         navigation={props.navigation}
@@ -33,7 +33,7 @@ export default function bateaux(props) {
                         style={styles.button}></Button>
                     </View>
                     <View style={styles.buttons1}>
-                        <Button text="Gast Micher" 
+                        <Button text="Gast Micher"
                         image={images.gastMicher_icon.url}
                         screen={"bateaux/gastMicher"}
                         navigation={props.navigation}
@@ -45,12 +45,12 @@ export default function bateaux(props) {
                         style={styles.button}></Button>
                     </View>
                     <View style={styles.buttons2}>
-                        <Button text="Contact" 
+                        <Button text="Contact"
                         image={images.ancre.url}
                         screen={"contact"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
-                        <Button text="Contact" 
+                        <Button text="Contact"
                         image={images.ancre.url}
                         screen={"contact"}
                         navigation={props.navigation}
