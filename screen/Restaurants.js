@@ -1,56 +1,56 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
-import Button from '../component/Button';
-import { images } from '../constants/Images'
 import React from 'react';
+import Button from '../component/Button';
+import { images } from '../constants/Images';
 
-export default function home(props) {
+export default function restaurants(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../assets/background.png")} style={styles.image}>
 
                 <View style={styles.main}>
                     <View style={styles.title}>
-                        <Text style={styles.titleContent}>Le bateau de Thibault</Text>
+                        <Text style={styles.titleContent}>Restaurants partenaires</Text>
                     </View>
                     <View style={styles.contenu}>
-                        <Text style={styles.boldText}>Vente en direct de notre bateau</Text>
-                        <Text style={styles.boldText}>Produits selon la saison, Livraison sur Paris</Text>
-                        <Text>06.63.99.99.78</Text>
-                        <Text>lebateaudethibault@gmail.com</Text>
-                        <Text>www.facebook.com/lebateaudethibault</Text>
+                        <Text style={styles.contenuText}>Tous les restaurants partenaires avec le bateau de Thibault.</Text>
+                        <Text style={styles.contenuText}>06.63.99.99.78</Text>
+                        <Text style={styles.contenuText}>lebateaudethibault@gmail.com</Text>
+                        <Text style={styles.contenuText}>www.facebook.com/lebateaudethibault</Text>
                     </View>
                 </View>
                 <View style={styles.buttons}>
-                    <View style={styles.mainButton}>
-                        <Button text="Produits et promotions"
-                            image={images.poisson.url}
-                            screen={"products"}
-                            navigation={props.navigation}
-                            style={styles.button}></Button>
-                    </View>
                     <View style={styles.buttons1}>
-                        <Button text="Bateaux" 
-                        image={images.ancre.url}
-                        screen={"bateaux"}
+                        <Button text="Bistrot des Gascons" 
+                        screen={"restaurants/desGascons"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
-                        <Button text="Restaurants"
-                        image={images.restaurant.url}
-                        screen={"restaurants"}
+                        <Button text="Les fous de l'île"
+                        screen={"restaurants/fousDeLIle"}
+                        navigation={props.navigation}
+                        style={styles.button}></Button>
+                    </View>
+                    <View style={styles.buttons1}>
+                        <Button text="Bistrot Landais" 
+                        screen={"restaurants/bistrotLandais"}
+                        navigation={props.navigation}
+                        style={styles.button}></Button>
+                        <Button text="Villa 9-trois"
+                        screen={"restaurants/villa9Trois"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
                     <View style={styles.buttons2}>
-                        <Button text="Recettes" 
-                        image={images.recette.url}
-                        screen={"recettes"}
+                        <Button text="Bistrot du Sommelier" 
+                        screen={"restaurants/BistrotDuSommelier"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
-                        <Button text="Contact" 
-                        image={images.tourteau.url}
+                        <Button text="Devenez Partenaire!" 
+                        screen={"restaurants/partenaire"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
                 </View>
+                    
                 <View style={styles.footer}>
                     <Text>Powered by BTK Inc.</Text>
                 </View>
@@ -93,12 +93,15 @@ const styles = StyleSheet.create({
         color: 'white'
     },
     boldText: {
-        fontWeight: "bold"
+        fontWeight: "bold",
+    },
+    contenuText: {
+        fontSize: 13
     },
     contenu: {
       flex: 2,
       alignItems: "center",
-      fontSize: 7,
+      fontSize: 6,
     },
 
     mainButton: {

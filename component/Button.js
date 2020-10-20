@@ -14,20 +14,18 @@ const styles = StyleSheet.create({
         margin: "2%",
         flex: 1,
         alignItems: 'center',
-        backgroundColor: '#ffeeeeee',
+        backgroundColor: 'rgba(52, 52, 52, 0.3)',
         justifyContent: 'flex-start',
         flexDirection: 'row',
         height: 80,
         padding: "3%",
+        borderWidth: 1,
     },
     text: {
         marginLeft: 10,
     },
     image: {
-        width: 70,
-        height: 70,
-        
+        width: 60,
+        height: 60,
     }
 });
-
-
