@@ -1,52 +1,58 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
-import Button from '../component/Button';
-import { images } from '../constants/Images'
 import React from 'react';
+import Button from '../component/Button';
+import { images } from '../constants/Images';
 
-export default function home(props) {
+
+export default function bateaux(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../assets/background.png")} style={styles.image}>
 
                 <View style={styles.main}>
                     <View style={styles.title}>
-                        <Text style={styles.titleContent}>Le bateau de Thibault</Text>
+                        <Text style={styles.titleContent}>Nos bateaux partenaires</Text>
                     </View>
                     <View style={styles.contenu}>
-                        <Text style={styles.boldText}>Vente en direct de notre bateau</Text>
-                        <Text style={styles.boldText}>Produits selon la saison, Livraison sur Paris</Text>
+                        <Text style={styles.boldText}>Toutes les eaux mènent à Thibault.</Text>
                         <Text>06.63.99.99.78</Text>
                         <Text>lebateaudethibault@gmail.com</Text>
                         <Text>www.facebook.com/lebateaudethibault</Text>
                     </View>
                 </View>
                 <View style={styles.buttons}>
-                    <View style={styles.mainButton}>
-                        <Button text="Produits et promotions"
-                            image={images.poisson.url}
-                            screen={"products"}
-                            navigation={props.navigation}
-                            style={styles.button}></Button>
-                    </View>
                     <View style={styles.buttons1}>
-                        <Button text="Bateaux" 
-                        image={images.ancre.url}
-                        screen={"bateaux"}
+                        <Button text="De La Brise" 
+                        image={images.deLaBrise_icon.url}
+                        screen={"bateaux/deLaBrise"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
-                        <Button text="Restaurants"
-                        image={images.restaurant.url}
-                        screen={"restaurants"}
+                        <Button text="Saphir"
+                        image={images.saphir_icon.url}
+                        screen={"bateaux/saphir"}
+                        navigation={props.navigation}
+                        style={styles.button}></Button>
+                    </View>
+                    <View style={styles.buttons1}>
+                        <Button text="Gast Micher" 
+                        image={images.gastMicher_icon.url}
+                        screen={"bateaux/gastMicher"}
+                        navigation={props.navigation}
+                        style={styles.button}></Button>
+                        <Button text="Aquilon"
+                        image={images.aquilon_icon.url}
+                        screen={"bateaux/aquilon"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
                     <View style={styles.buttons2}>
-                        <Button text="Recettes" 
-                        image={images.recette.url}
-                        screen={"recettes"}
+                        <Button text="Contact" 
+                        image={images.ancre.url}
+                        screen={"contact"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                         <Button text="Contact" 
-                        image={images.tourteau.url}
+                        image={images.ancre.url}
+                        screen={"contact"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
