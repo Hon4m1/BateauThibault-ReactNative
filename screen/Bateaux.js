@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react
 import React from 'react';
 import Button from '../component/Button';
 import { images } from '../constants/Images';
-import Footer from '../../component/Footer';
+import Footer from '../component/Footer';
 
 
 export default function bateaux(props) {
