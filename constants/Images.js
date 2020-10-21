@@ -82,7 +82,7 @@ const images = {
     stjacquesRecette: {
         imgName: 'stjacquesRecette',
         url: require("../assets/images/saintJacques.png")
-
+      },
     aquilon: {
       imgName: 'aquilon',
       url: require("../assets/images/aquilon.png")
