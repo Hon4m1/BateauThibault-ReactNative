@@ -71,6 +71,17 @@ const images = {
         imgName: 'villa9Trois_icon',
         url: require("../assets/icons/villa9Trois_icon.png")
     },
+    barRecette: {
+        imgName: 'barRecette',
+        url: require("../assets/images/barRecette.png")
+    },
+    homardRecette: {
+        imgName: 'homardRecette',
+        url: require("../assets/images/homardRecette.png")
+    },stjacquesRecette: {
+        imgName: 'stjacquesRecette',
+        url: require("../assets/images/saintJacques.png")
+    },
 }
 
 export {images};

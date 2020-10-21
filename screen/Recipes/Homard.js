@@ -18,7 +18,7 @@ export default function home(props) {
                         <Text>XXX YYY ZZZ</Text>
                     </View>
                 </View>
-                <View style={styles.footer}>
+                <View>
                     <Text>Qu'il est chaud le Soleil</Text>
                     <Text>Quand nous sommes en vacances</Text>
                     <Text>Y a d'la joie, des hirondelles</Text>
@@ -50,8 +50,6 @@ const styles = StyleSheet.create({
 
     footer: {
         flex: 3,
-        justifyContent: "flex-end",
-        alignItems: "center"
     },
 
     subfooter: {
@@ -88,7 +86,6 @@ const styles = StyleSheet.create({
     contenu: {
       flex: 2,
       alignItems: "center",
-      justifyContent: "center",
       fontSize: 7,
     },
   });
