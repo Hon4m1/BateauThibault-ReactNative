@@ -3,9 +3,10 @@ import Button from '../component/Button';
 import { images } from '../constants/Images';
 import Title from '../component/Title';
 import Footer from '../component/Footer';
-import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
+import  { getRessources }  from '../services/apirest'
+import { StyleSheet, Text, View, StatusBar, ImageBackground, Image, ReactComponent, Header } from 'react-native';
 
-
+/*
 export default function products(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../assets/background.png")} style={styles.image}>
@@ -35,34 +36,51 @@ export default function products(props) {
                 <Footer></Footer>
             </View>
     )
-}
+}*/
 
-/*export default class Products extends ReactComponent {
+export default class Products extends React.Component {
 
     state = {
         data: []
     }
 
-
+    componentDidMount(){
+      getRessources("products").then(response=>{
+        this.setState({data:response})
+      })
+    }
 
     render(){
-    return(
-        <View style="container">
-            <Header navigation={this.props.navigation}>
-            <Text style={{marginVertical:10, textAlign:"center"}}>Choississez</Text>
-            </Header>
-            <View style={{flex:1}}>
-                <Button text="Poissons"
-                image={images.poulpe.url}
-                screen={"ProductList"}
-                navigation={this.prpos.navigation}
-                data={this.state.data.filter(value=>value.category==0)}></Button>
-            </View>
-        </View>
-    )
+      return(
+          <View style="container">
+               <Text style={{marginVertical:10, textAlign:"center"}}>Choississez vos produits</Text>
+               <View style={{flex:1}}>
+                  <Button text="Poissons"
+                  image={images.poulpe.url}
+                  screen={"productsList"}
+                  navigation={this.props.navigation}
+                  data={this.state.data.filter(value=>value.category==0)}></Button>
+                  <Button text="Coquillages"
+                  image={images.poulpe.url}
+                  screen={"productsList"}
+                  navigation={this.props.navigation}
+                  data={this.state.data.filter(value=>value.category==1)}></Button>
+                  <Button text="Crustacés"
+                  image={images.poulpe.url}
+                  screen={"productsList"}
+                  navigation={this.props.navigation}
+                  data={this.state.data.filter(value=>value.category==2)}></Button>
+                  <Button text="Promotion"
+                  image={images.poulpe.url}
+                  screen={"productsList"}
+                  navigation={this.props.navigation}
+                  data={this.state.data.filter(value=>value.discount!=0)}></Button>
+              </View>
+          </View>
+      )
+  }
 }
-}
-*/
+
 
 const styles = StyleSheet.create({
     container: {
