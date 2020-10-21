@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
 import React from 'react';
+import Title from '../../component/Title'
+import Footer from '../../component/Footer'
 
 export default function TourteauLinguine(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
 
                 <View style={styles.main}>
-                    <View style={styles.title}>
-                        <Text style={styles.titleContent}>Tourteau Linguine</Text>
-                    </View>
+                    <Title title="Tourteau Linguine"></Title>
                     
                     <Image 
                     style={styles.image}
@@ -28,9 +28,7 @@ export default function TourteauLinguine(props) {
                     <Text>Dans ce joli paysage</Text>
                     <Text>Moi je me balade en tongs</Text>
                 </View>
-                <View style={styles.subfooter}>
-                    <Text>Powered by blabla</Text>
-                </View>
+                <Footer></Footer>
                 <StatusBar style="auto" />
                 </ImageBackground>
             </View>

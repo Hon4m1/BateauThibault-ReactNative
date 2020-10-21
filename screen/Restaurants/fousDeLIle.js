@@ -1,62 +1,83 @@
 import React from 'react';
 import Title from "../../component/Title";
-import { StyleSheet, Text, View, ImageBackground, Image } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground, Image, StatusBar } from 'react-native';
 import Footer from '../../component/Footer';
-import { images } from '../../constants/Images';
 
 export default function fousDeLIle(props){
     return(
-        <View style={styles.container}>
-            <ImageBackground source={require("../../assets/background.png")} resizeMode="cover" style={styles.image}>
-                <Title title="Les Fous De L'Île"></Title>
-                <Image style={styles.img} fadeDuration={1000} resizeMethod="scale" resizeMode="cover" source={require("../../assets/images/Restaurants/fousDeLIle.png")}></Image>
-                <View style={styles.first}>
-                    <Text style={styles.text}>XXX YYY ZZZ</Text>
-                    <Text>Qu'il est chaud le soleil</Text>
-                    <Text>Quand nous sommes en vacances</Text>
-                    <Text>Y a d'la joie, des hirondelles</Text>
-                    <Text>C'est le sud de la France</Text>
-                    <Text>Papa bricole au garage</Text>
-                    <Text>Maman lit dans la chaise longue</Text>
-                    <Text>Dans ce joli paysage</Text>
-                    <Text>Je me balade en tongs</Text>
-                </View>
-                <View style={styles.second}>
-                    <Text>Que du bonheur!</Text>
-                    <Text>Que du bonheur!</Text>
-                </View>
-                <Footer></Footer>
-            </ImageBackground>
-        </View>
-    )
-};
+    <View style={styles.container}>
+        <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
 
-const styles=StyleSheet.create({
+          <View style={styles.main}>
+              <Title title="Fous de L'Île"></Title>
+              
+              <Image style={styles.image} source={require("../../assets/images/Restaurants/fousDeLIle.png")}/>
+
+              <View style={styles.conteneur}>
+                <Text style={styles.contacts}>XXX YYY ZZZ</Text>
+              </View>
+          </View>
+          <View style={styles.conteneur}>
+              <Text style={styles.contenu}>Qu'il est chaud le Soleil</Text>
+              <Text style={styles.contenu}>Quand nous sommes en vacances</Text>
+              <Text style={styles.contenu}>Y a d'la joie, des hirondelles</Text>
+              <Text style={styles.contenu}>C'est le sud de la France</Text>
+              <Text style={styles.contenu}>Papa bricole au garage</Text>
+              <Text style={styles.contenu}>Maman lit dans la chaise longue</Text>
+              <Text style={styles.contenu}>Dans ce joli paysage</Text>
+              <Text style={styles.contenu}>Moi je me balade en tongs</Text>
+          </View>
+          <View style={styles.conteneur2}>
+          <Text style={styles.contenu}>Que du bonheur!</Text>
+          <Text style={styles.contenu}>Que du bonheur!</Text>
+          </View>
+          <Footer></Footer>
+          <StatusBar style="auto" />
+          </ImageBackground>
+      </View>
+)
+}
+
+const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: '#fff',
-      },
-    image:{
+      flex: 1,
+      backgroundColor: '#fff',
+    },
+   main: {
+      flex: 5
+    },
+    buttons: {
+      flex: 4,
+    },
+    imagebackground:{
         flex: 1,
         resizeMode: "cover",
         justifyContent: "center"
     },
-    img: {
+    boldText: {
+        fontWeight: "bold"
+    },
+    image:{
         flex: 5,
-    },
-    first: {
+        justifyContent: "center",
+        alignItems: "center",
+        resizeMode: "contain",
         alignSelf: "center"
     },
-    second: {
-        alignSelf: "center"
+    contacts: {
+        fontFamily: "Noteworthy",
+        alignSelf: "center",
+        fontSize: 15
     },
-    main: {
-        flex: 5,
-        alignSelf: "center"
-      },
-    text: {
-        fontSize: 18,
-        bottom: 20,
-        alignSelf: "center"
+    contenu: {
+        fontFamily: "Noteworthy",
+        alignSelf: "center",
+        fontSize: 7
+    },
+    conteneur: {
+        flex: 2
+    },
+    conteneur2: {
+        flex : 1
     }
-})
+  });

@@ -7,57 +7,78 @@ import images from '../../constants/Images';
 export default function desGascon(props){
     return(
         <View style={styles.container}>
-            <ImageBackground source={require("../../assets/background.png")} fadeDuration={1000} style={styles.image}>
-                <Title title="Bistrot Des Gascons"></Title>
-                <Image style={styles.img} resizeMethod="scale" resizeMode="center" source={require("../../assets/images/Restaurants/desGascons.png")} fadeDuration={1000} ></Image>
-                <View style={styles.first}>
-                    <Text style={styles.text}>XXX YYY ZZZ</Text>
-                    <Text>Qu'il est chaud le soleil</Text>
-                    <Text>Quand nous sommes en vacances</Text>
-                    <Text>Y a d'la joie, des hirondelles</Text>
-                    <Text>C'est le sud de la France</Text>
-                    <Text>Papa bricole au garage</Text>
-                    <Text>Maman lit dans la chaise longue</Text>
-                    <Text>Dans ce joli paysage</Text>
-                    <Text>Je me balade en tongs</Text>
-                </View>
-                <View style={styles.second}>
-                    <Text>Que du bonheur!</Text>
-                    <Text>Que du bonheur!</Text>
-                </View>
-                <Footer></Footer>
-            </ImageBackground>
-        </View>
-    )
-};
+        <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
 
-const styles=StyleSheet.create({
+          <View style={styles.main}>
+              <Title title="Bistrot des Gascon"></Title>
+              
+              <Image style={styles.image} source={require("../../assets/images/Restaurants/desGascons.png")}/>
+
+              <View style={styles.conteneur}>
+                <Text style={styles.contacts}>XXX YYY ZZZ</Text>
+              </View>
+          </View>
+          <View style={styles.conteneur}>
+              <Text style={styles.contenu}>Qu'il est chaud le Soleil</Text>
+              <Text style={styles.contenu}>Quand nous sommes en vacances</Text>
+              <Text style={styles.contenu}>Y a d'la joie, des hirondelles</Text>
+              <Text style={styles.contenu}>C'est le sud de la France</Text>
+              <Text style={styles.contenu}>Papa bricole au garage</Text>
+              <Text style={styles.contenu}>Maman lit dans la chaise longue</Text>
+              <Text style={styles.contenu}>Dans ce joli paysage</Text>
+              <Text style={styles.contenu}>Moi je me balade en tongs</Text>
+          </View>
+          <View style={styles.conteneur2}>
+          <Text style={styles.contenu}>Que du bonheur!</Text>
+          <Text style={styles.contenu}>Que du bonheur!</Text>
+          </View>
+          <Footer></Footer>
+          <StatusBar style="auto" />
+          </ImageBackground>
+      </View>
+)
+}
+
+const styles = StyleSheet.create({
     container: {
+      flex: 1,
+      backgroundColor: '#fff',
+    },
+   main: {
+      flex: 5
+    },
+    buttons: {
+      flex: 4,
+    },
+    imagebackground:{
         flex: 1,
-        backgroundColor: '#fff',
-      },
-    image:{
-        flex: 1,
-        flexDirection: "column",
         resizeMode: "cover",
         justifyContent: "center"
-
     },
-    img: {
-        flex: 4,
-        flexDirection: "column"
+    boldText: {
+        fontWeight: "bold"
     },
-    first: {
-        alignSelf: "center",
-        fontSize: 12
-    },
-    second: {
-        alignSelf: "center",
-        fontSize: 12
-    },
-    text: {
-        fontSize: 18,
-        bottom: 20,
+    image:{
+        flex: 5,
+        justifyContent: "center",
+        alignItems: "center",
+        resizeMode: "contain",
         alignSelf: "center"
+    },
+    contacts: {
+        fontFamily: "Noteworthy",
+        alignSelf: "center",
+        fontSize: 15
+    },
+    contenu: {
+        fontFamily: "Noteworthy",
+        alignSelf: "center",
+        fontSize: 7
+    },
+    conteneur: {
+        flex: 2
+    },
+    conteneur2: {
+        flex : 1
     }
-})
+  });
