@@ -9,6 +9,9 @@ import { ReactReduxContext } from 'react-redux';
 /*import (Provider) from 'react-redux'
 import store from "./store/configurestore.js"*/
 import batDeLaBrise from './screen/bateaux/deLaBrise'
+import batAquilon from './screen/bateaux/aquilon'
+import batGastMicher from './screen/bateaux/gastMicher'
+import batSaphir from './screen/bateaux/saphir'
 import Products from './screen/Products'
 import Bateaux from './screen/Bateaux'
 import Recettes from './screen/Recettes'
@@ -20,13 +23,17 @@ export default function App() {
   return (
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false}}>
+          <Stack.Screen name="bateaux" component={ Bateaux } />
+          <Stack.Screen name="De La Brise" component={ batDeLaBrise } />
           <Stack.Screen name="home" component={ Home } />
           <Stack.Screen name="products" component={ Products } />
-          <Stack.Screen name="bateaux" component={ Bateaux } />
           <Stack.Screen name="restaurants" component={ Restaurants } />
           <Stack.Screen name="recettes" component={ Recettes } />
-          <Stack.Screen name="De La Brise" component={ batDeLaBrise } />
           <Stack.Screen name="TourteauLinguine" component={ TourteauLinguine } />
+
+          <Stack.Screen name="Aquilon" component={ batAquilon } />
+          <Stack.Screen name="Gast Micher" component={ batGastMicher } />
+          <Stack.Screen name="Saphir" component={ batSaphir } />
         </Stack.Navigator>
       </NavigationContainer>
   );

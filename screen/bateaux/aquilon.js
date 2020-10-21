@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
-// import Button from '../component/Button';
+import { images } from '../../constants/Images'
 import React from 'react';
 
 export default function aquilon(props) {
@@ -11,7 +11,7 @@ export default function aquilon(props) {
                     </View>
                     <View style={styles.image}>
                       <Image
-                      source={require('../../assets/images/aquilon.png')}
+                      source={images.aquilon.url}
                       />
                     </View>
                   <View style={styles.contenu}>
