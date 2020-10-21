@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
+import { images } from '../../constants/Images'
 import React from 'react';
 
 export default function home(props) {
@@ -7,26 +8,21 @@ export default function home(props) {
 
                 <View style={styles.main}>
                     <View style={styles.title}>
-                        <Text style={styles.titleContent}>Tourteau Linguine</Text>
+                        <Text style={styles.titleContent}>Bar rôti au laurier frais</Text>
                     </View>
 
                     <Image
                     style={styles.image}
-                    source = {require("../../assets/poulpe.png")}/>
-
-                    <View style={styles.contenu}>
-                        <Text>XXX YYY ZZZ</Text>
-                    </View>
+                    source = {images.barRecette.url}/>
                 </View>
-                <View>
-                    <Text>Qu'il est chaud le Soleil</Text>
-                    <Text>Quand nous sommes en vacances</Text>
-                    <Text>Y a d'la joie, des hirondelles</Text>
-                    <Text>C'est le sud de la France</Text>
-                    <Text>Papa bricole au garage</Text>
-                    <Text>Maman lit dans la chaise longue</Text>
-                    <Text>Dans ce joli paysage</Text>
-                    <Text>Moi je me balade en tongs</Text>
+                <View style={styles.footer}>
+                    <Text>Sur une plaque ou plat allant au four, disposer</Text>
+                    <Text>quelques feuilles de laurier frais,verser un filet</Text>
+                    <Text>d'huile d'olive et du gros sel. Disposer le bar, puis </Text>
+                    <Text>l'arroser d'un filet d'huile d'olive et mettre un peu de </Text>
+                    <Text> gros sel sur la peau</Text>
+                    <Text>Cuire au four 12min à 240°C</Text>
+
                 </View>
                 <View style={styles.subfooter}>
                     <Text>Powered by blabla</Text>
@@ -49,7 +45,11 @@ const styles = StyleSheet.create({
     },
 
     footer: {
-        flex: 3,
+      flex: 3,
+      marginLeft: 10,
+      marginRight: 10,
+      justifyContent: "center",
+      alignItems: "center"
     },
 
     subfooter: {

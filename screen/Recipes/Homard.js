@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
 import React from 'react';
+import { images } from '../../constants/Images'
 
 export default function home(props) {
     return(<View style={styles.container}>
@@ -12,21 +13,18 @@ export default function home(props) {
 
                     <Image
                     style={styles.image}
-                    source = {require("../../assets/poulpe.png")}/>
-
-                    <View style={styles.contenu}>
-                        <Text>XXX YYY ZZZ</Text>
-                    </View>
+                    source = {images.homardRecette.url}/>
                 </View>
-                <View>
-                    <Text>Qu'il est chaud le Soleil</Text>
-                    <Text>Quand nous sommes en vacances</Text>
-                    <Text>Y a d'la joie, des hirondelles</Text>
-                    <Text>C'est le sud de la France</Text>
-                    <Text>Papa bricole au garage</Text>
-                    <Text>Maman lit dans la chaise longue</Text>
-                    <Text>Dans ce joli paysage</Text>
-                    <Text>Moi je me balade en tongs</Text>
+                <View style={styles.footer}>
+                    <Text>Faites cuire les homards dans de l'eau bouillante</Text>
+                    <Text>avec du thym, du laurier, du sel, du poivre</Text>
+                    <Text>de Cayenne. Laissez cuire 20 minutes. Egouttez</Text>
+                    <Text>les et laissez les refroidir</Text>
+                    <Text>Découpez les coffres des homards dans le sens</Text>
+                    <Text>de la longueur</Text>
+                    <Text>Mélangez la mayonnaise avec le cognac, le corail</Text>
+                    <Text>et la ciboulette ciselée</Text>
+
                 </View>
                 <View style={styles.subfooter}>
                     <Text>Powered by blabla</Text>
@@ -49,7 +47,11 @@ const styles = StyleSheet.create({
     },
 
     footer: {
-        flex: 3,
+      flex: 3,
+      marginLeft: 10,
+      marginRight: 10,
+      justifyContent: "center",
+      alignItems: "center"
     },
 
     subfooter: {
