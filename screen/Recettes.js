@@ -39,7 +39,7 @@ export default function recettes(props) {
                         style={styles.button}></Button>
                         <Button text="Tourteau"
                         image={images.tourteau.url}
-                        screen={"recettes/tourteau"}
+                        screen={"TourteauLinguine"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>

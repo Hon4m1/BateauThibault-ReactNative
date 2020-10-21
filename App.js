@@ -18,6 +18,7 @@ import bistrotDuSommelier from './screen/Restaurants/bistrotDuSommelier'
 import bistrotLandais from './screen/Restaurants/bistrotLandais'
 import fousDeLIle from './screen/Restaurants/fousDeLIle'
 import villa9Trois from './screen/Restaurants/villa9Trois'
+import Contact from './screen/Contact'
 
 
 const Stack = createStackNavigator();
@@ -38,6 +39,7 @@ export default function App() {
           <Stack.Screen name="bistrotLandais" component={ bistrotLandais } />
           <Stack.Screen name="fousDeLIle" component={ fousDeLIle } />
           <Stack.Screen name="villa9Trois" component={ villa9Trois } />
+          <Stack.Screen name="Contact" component={ Contact } />
         </Stack.Navigator>
       </NavigationContainer>
   );

@@ -8,7 +8,6 @@ import Footer from '../component/Footer'
 export default function home(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../assets/background.png")} style={styles.image}>
-
                 <View style={styles.main}>
                     <Title title="Le bateau de Thibault"></Title>
                     <View style={styles.contenu}>
@@ -47,13 +46,14 @@ export default function home(props) {
                         style={styles.button}></Button>
                         <Button text="Contact" 
                         image={images.tourteau.url}
+                        screen={"Contact"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
                 </View>
                 <Footer></Footer>
                 <StatusBar style="auto" />
-                </ImageBackground>
+              </ImageBackground>
             </View>
     )
 }

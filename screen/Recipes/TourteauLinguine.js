@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
 import React from 'react';
 
-export default function home(props) {
+export default function TourteauLinguine(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
 
