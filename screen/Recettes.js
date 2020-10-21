@@ -20,21 +20,21 @@ export default function recettes(props) {
                 </View>
                 <View style={styles.buttons}>
                     <View style={styles.buttons1}>
-                        <Button text="Homard" 
+                        <Button text="Homard"
                         image={images.homardRecette_icon.url}
-                        screen={"recettes/homard"}
+                        screen={"Homard"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                         <Button text="St Jacques"
                         image={images.saintJacques_icon.url}
-                        screen={"recettes/stJacques"}
+                        screen={"StJacques"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
                     <View style={styles.buttons1}>
-                        <Button text="Bar" 
+                        <Button text="Bar"
                         image={images.barRecette_icon.url}
-                        screen={"recettes/bar"}
+                        screen={"Bar"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                         <Button text="Tourteau"
@@ -44,14 +44,14 @@ export default function recettes(props) {
                         style={styles.button}></Button>
                     </View>
                     <View style={styles.buttons2}>
-                        <Button text="Recette" 
+                        <Button text="Recette"
                         image={images.poulpe.url}
-                        screen={"recettes/recette"}
+                        screen={"recette"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
-                        <Button text="Recette" 
+                        <Button text="Recette"
                         image={images.poulpe.url}
-                        screen={"recettes/recette"}
+                        screen={"recette"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>

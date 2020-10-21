@@ -90,7 +90,36 @@ const images = {
     villa9Trois: {
         imgName: 'villa9Trois',
         url: require("../assets/images/Restaurants/villa9Trois.png")
-    }
+    },
+    barRecette: {
+        imgName: 'barRecette',
+        url: require("../assets/images/barRecette.png")
+    },
+    homardRecette: {
+        imgName: 'homardRecette',
+        url: require("../assets/images/homardRecette.png")
+    },
+    stjacquesRecette: {
+        imgName: 'stjacquesRecette',
+        url: require("../assets/images/saintJacques.png")
+     },
+    aquilon: {
+      imgName: 'aquilon',
+      url: require("../assets/images/aquilon.png")
+    },
+    deLaBrise: {
+      imgName: 'deLaBrise',
+      url: require("../assets/images/deLaBrise.png")
+    },
+    gastMicher: {
+      imgName: 'gastMicher',
+      url: require("../assets/images/gastMicher.png")
+    },
+    saphir: {
+      imgName: 'saphir',
+      url: require("../assets/images/saphir.png")
+    },
+
 }
 
 export {images};

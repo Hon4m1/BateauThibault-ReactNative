@@ -1,36 +1,34 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
 import React from 'react';
-import Title from '../../component/Title'
-import Footer from '../../component/Footer'
 import { images } from '../../constants/Images'
 
-
-export default function TourteauLinguine(props) {
+export default function home(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
 
                 <View style={styles.main}>
-                    <Title title="Tourteau Linguine"></Title>
-                    
-                    <Image 
-                    style={styles.image}
-                    source = {images.poulpe.url}/>
-
-                    <View style={styles.contenu}>
-                        <Text>XXX YYY ZZZ</Text>
+                    <View style={styles.title}>
+                        <Text style={styles.titleContent}>Tourteau Linguine</Text>
                     </View>
+
+                    <Image
+                    style={styles.image}
+                    source = {images.homardRecette.url}/>
                 </View>
                 <View style={styles.footer}>
-                    <Text>Qu'il est chaud le Soleil</Text>
-                    <Text>Quand nous sommes en vacances</Text>
-                    <Text>Y a d'la joie, des hirondelles</Text>
-                    <Text>C'est le sud de la France</Text>
-                    <Text>Papa bricole au garage</Text>
-                    <Text>Maman lit dans la chaise longue</Text>
-                    <Text>Dans ce joli paysage</Text>
-                    <Text>Moi je me balade en tongs</Text>
+                    <Text>Faites cuire les homards dans de l'eau bouillante</Text>
+                    <Text>avec du thym, du laurier, du sel, du poivre</Text>
+                    <Text>de Cayenne. Laissez cuire 20 minutes. Egouttez</Text>
+                    <Text>les et laissez les refroidir</Text>
+                    <Text>Découpez les coffres des homards dans le sens</Text>
+                    <Text>de la longueur</Text>
+                    <Text>Mélangez la mayonnaise avec le cognac, le corail</Text>
+                    <Text>et la ciboulette ciselée</Text>
+
                 </View>
-                <Footer></Footer>
+                <View style={styles.subfooter}>
+                    <Text>Powered by blabla</Text>
+                </View>
                 <StatusBar style="auto" />
                 </ImageBackground>
             </View>
@@ -49,10 +47,11 @@ const styles = StyleSheet.create({
     },
 
     footer: {
-        flex: 3,
-        marginLeft: 10,
-        marginRight: 10,
-        alignItems: "center"
+      flex: 3,
+      marginLeft: 10,
+      marginRight: 10,
+      justifyContent: "center",
+      alignItems: "center"
     },
 
     subfooter: {
@@ -89,7 +88,6 @@ const styles = StyleSheet.create({
     contenu: {
       flex: 2,
       alignItems: "center",
-      justifyContent: "center",
       fontSize: 7,
     },
   });

@@ -47,6 +47,7 @@ export default function home(props) {
                         <Button text="Contact" 
                         image={images.tourteau.url}
                         screen={"Contact"}
+
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
