@@ -13,10 +13,10 @@ import Recette from './screen/Recipes/Recette'
 import { ReactReduxContext } from 'react-redux'
 /*import (Provider) from 'react-redux'
 import store from "./store/configurestore.js"*/
-import batDeLaBrise from './screen/bateaux/deLaBrise'
-import batAquilon from './screen/bateaux/aquilon'
-import batGastMicher from './screen/bateaux/gastMicher'
-import batSaphir from './screen/bateaux/saphir'
+import deLaBrise from './screen/bateaux/deLaBrise'
+import aquilon from './screen/bateaux/aquilon'
+import gastMicher from './screen/bateaux/gastMicher'
+import saphir from './screen/bateaux/saphir'
 import Products from './screen/Products'
 import Bateaux from './screen/Bateaux'
 import Recettes from './screen/Recettes'
@@ -36,13 +36,13 @@ export default function App() {
           <Stack.Screen name="Recette" component={ Recette } />
           <Stack.Screen name="Homard" component={ Homard } />
           <Stack.Screen name="bateaux" component={ Bateaux } />
-          <Stack.Screen name="De La Brise" component={ batDeLaBrise } />
+          <Stack.Screen name="deLaBrise" component={ deLaBrise } />
           <Stack.Screen name="products" component={ Products } />
           <Stack.Screen name="restaurants" component={ Restaurants } />
           <Stack.Screen name="recettes" component={ Recettes } />
-          <Stack.Screen name="Aquilon" component={ batAquilon } />
-          <Stack.Screen name="Gast Micher" component={ batGastMicher } />
-          <Stack.Screen name="Saphir" component={ batSaphir } />
+          <Stack.Screen name="aquilon" component={ aquilon } />
+          <Stack.Screen name="gastMicher" component={ gastMicher } />
+          <Stack.Screen name="saphir" component={ saphir } />
 
         </Stack.Navigator>
       </NavigationContainer>
