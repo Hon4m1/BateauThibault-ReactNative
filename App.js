@@ -27,13 +27,13 @@ export default function App() {
   return (
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false}}>
+          <Stack.Screen name="home" component={ Home } />
           <Stack.Screen name="Bar" component={ Bar } />
           <Stack.Screen name="StJacques" component={ StJacques } />
           <Stack.Screen name="TourteauLinguine" component={ TourteauLinguine } />
           <Stack.Screen name="Homard" component={ Homard } />
           <Stack.Screen name="bateaux" component={ Bateaux } />
           <Stack.Screen name="De La Brise" component={ batDeLaBrise } />
-          <Stack.Screen name="home" component={ Home } />
           <Stack.Screen name="products" component={ Products } />
           <Stack.Screen name="restaurants" component={ Restaurants } />
           <Stack.Screen name="recettes" component={ Recettes } />
