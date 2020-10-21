@@ -8,7 +8,7 @@ export default function home(props) {
 
                 <View style={styles.main}>
                     <View style={styles.title}>
-                        <Text style={styles.titleContent}>Tourteau Linguine</Text>
+                        <Text style={styles.titleContent}>Recette XYZ</Text>
                     </View>
 
                     <Image
