@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
 import React from 'react';
+import { images } from '../../constants/Images'
 
 export default function home(props) {
     return(<View style={styles.container}>
@@ -12,7 +13,7 @@ export default function home(props) {
 
                     <Image
                     style={styles.image}
-                    source = {require("../../assets/poulpe.png")}/>
+                    source = {images.poulpe.url}/>
 
                     <View style={styles.contenu}>
                         <Text>XXX YYY ZZZ</Text>
@@ -50,7 +51,8 @@ const styles = StyleSheet.create({
 
     footer: {
         flex: 3,
-        justifyContent: "flex-end",
+        marginLeft: 10,
+        marginRight: 10,
         alignItems: "center"
     },
 
