@@ -78,9 +78,27 @@ const images = {
     homardRecette: {
         imgName: 'homardRecette',
         url: require("../assets/images/homardRecette.png")
-    },stjacquesRecette: {
+    },
+    stjacquesRecette: {
         imgName: 'stjacquesRecette',
         url: require("../assets/images/saintJacques.png")
+
+    aquilon: {
+      imgName: 'aquilon',
+      url: require("../assets/images/aquilon.png")
+    },
+    deLaBrise: {
+      imgName: 'deLaBrise',
+      url: require("../assets/images/deLaBrise.png")
+    },
+    gastMicher: {
+      imgName: 'gastMicher',
+      url: require("../assets/images/gastMicher.png")
+    },
+    saphir: {
+      imgName: 'saphir',
+      url: require("../assets/images/saphir.png")
+
     },
 }
 
