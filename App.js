@@ -8,6 +8,7 @@ import TourteauLinguine from './screen/Recipes/TourteauLinguine'
 import Homard from './screen/Recipes/Homard'
 import Bar from './screen/Recipes/Bar'
 import StJacques from './screen/Recipes/StJacques'
+import Recette from './screen/Recipes/Recette'
 
 import { ReactReduxContext } from 'react-redux'
 /*import (Provider) from 'react-redux'
@@ -19,6 +20,7 @@ import batSaphir from './screen/bateaux/saphir'
 import Products from './screen/Products'
 import Bateaux from './screen/Bateaux'
 import Recettes from './screen/Recettes'
+
 import Restaurants from './screen/Restaurants'
 
 const Stack = createStackNavigator();
@@ -31,6 +33,7 @@ export default function App() {
           <Stack.Screen name="Bar" component={ Bar } />
           <Stack.Screen name="StJacques" component={ StJacques } />
           <Stack.Screen name="TourteauLinguine" component={ TourteauLinguine } />
+          <Stack.Screen name="Recette" component={ Recette } />
           <Stack.Screen name="Homard" component={ Homard } />
           <Stack.Screen name="bateaux" component={ Bateaux } />
           <Stack.Screen name="De La Brise" component={ batDeLaBrise } />
