@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
 import { images } from '../../constants/Images'
 import React from 'react';
+import Title from '../../component/Title';
+import Footer from '../../component/Footer';
 
 export default function aquilon(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../../assets/background.png")} style={styles.bg}>
                 <View style={styles.main}>
-                    <View style={styles.title}>
-                        <Text style={styles.titleContent}>Aquilon</Text>
-                    </View>
+                    <Title title="Aquilon"></Title>
                     <View style={styles.image}>
                       <Image
                       source={images.aquilon.url}
@@ -27,9 +27,7 @@ export default function aquilon(props) {
                       <Text>Que de bonheur !</Text>
                   </View>
                 </View>
-                <View style={styles.footer}>
-                    <Text>Powered by blabla</Text>
-                </View>
+                <Footer></Footer>
                 <StatusBar style="auto" />
                 </ImageBackground>
             </View>
