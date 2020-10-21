@@ -27,7 +27,7 @@ export default function home(props) {
                             style={styles.button}></Button>
                     </View>
                     <View style={styles.buttons1}>
-                        <Button text="Bateaux" 
+                        <Button text="Bateaux"
                         image={images.ancre.url}
                         screen={"bateaux"}
                         navigation={props.navigation}
@@ -39,20 +39,20 @@ export default function home(props) {
                         style={styles.button}></Button>
                     </View>
                     <View style={styles.buttons2}>
-                        <Button text="Recettes" 
+                        <Button text="Recettes"
                         image={images.recette.url}
                         screen={"recettes"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
-                        <Button text="Contact" 
+                        <Button text="Contact"
                         image={images.tourteau.url}
                         screen={"Contact"}
 
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
+                    <Footer></Footer>
                 </View>
-                <Footer></Footer>
                 <StatusBar style="auto" />
               </ImageBackground>
             </View>

@@ -2,6 +2,8 @@ import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react
 import React from 'react';
 import Button from '../component/Button';
 import { images } from '../constants/Images';
+import Footer from '../component/Footer';
+
 
 export default function restaurants(props) {
     return(<View style={styles.container}>
@@ -20,7 +22,7 @@ export default function restaurants(props) {
                 </View>
                 <View style={styles.buttons}>
                     <View style={styles.buttons1}>
-                        <Button text="Bistrot des Gascons" 
+                        <Button text="Bistrot des Gascons"
                         screen={"desGascons"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
@@ -30,7 +32,7 @@ export default function restaurants(props) {
                         style={styles.button}></Button>
                     </View>
                     <View style={styles.buttons1}>
-                        <Button text="Bistrot Landais" 
+                        <Button text="Bistrot Landais"
                         screen={"bistrotLandais"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
@@ -40,20 +42,18 @@ export default function restaurants(props) {
                         style={styles.button}></Button>
                     </View>
                     <View style={styles.buttons2}>
-                        <Button text="Bistrot du Sommelier" 
+                        <Button text="Bistrot du Sommelier"
                         screen={"bistrotDuSommelier"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
-                        <Button text="Devenez Partenaire!" 
+                        <Button text="Devenez Partenaire!"
                         screen={"restaurants/partenaire"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
                 </View>
-                    
-                <View style={styles.footer}>
-                    <Text>Powered by BTK Inc.</Text>
-                </View>
+
+                  <Footer></Footer>
                 <StatusBar style="auto" />
                 </ImageBackground>
             </View>

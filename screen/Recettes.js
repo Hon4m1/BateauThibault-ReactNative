@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
 import React from 'react';
 import Button from '../component/Button';
+import Footer from '../component/Footer';
 import { images } from '../constants/Images';
 
 export default function recettes(props) {
@@ -46,18 +47,15 @@ export default function recettes(props) {
                     <View style={styles.buttons2}>
                         <Button text="Recette"
                         image={images.poulpe.url}
-                        screen={"recette"}
+                        screen={"Recette"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                         <Button text="Recette"
                         image={images.poulpe.url}
-                        screen={"recette"}
+                        screen={"Recette"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
-                </View>
-                <View style={styles.footer}>
-                    <Text>Powered by BTK Inc.</Text>
                 </View>
                 <StatusBar style="auto" />
                 </ImageBackground>
