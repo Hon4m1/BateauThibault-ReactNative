@@ -3,16 +3,14 @@ import React from 'react';
 import Button from '../component/Button';
 import { images } from '../constants/Images';
 import Footer from '../component/Footer';
-
+import Title from '../component/Title';
 
 export default function bateaux(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../assets/background.png")} style={styles.image}>
 
                 <View style={styles.main}>
-                    <View style={styles.title}>
-                        <Text style={styles.titleContent}>Nos bateaux partenaires</Text>
-                    </View>
+                  <Title title="Bateaux"></Title>
                     <View style={styles.contenu}>
                         <Text style={styles.boldText}>Toutes les eaux mènent à Thibault.</Text>
                         <Text>06.63.99.99.78</Text>
