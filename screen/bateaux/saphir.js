@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
-// import Button from '../component/Button';
+import { images } from '../../constants/Images'
 import React from 'react';
 
 export default function saphir(props) {
@@ -11,7 +11,7 @@ export default function saphir(props) {
                     </View>
                     <View style={styles.image}>
                       <Image
-                      source={require('../../assets/images/saphir.png')}
+                      source={images.saphir.url}
                       />
                     </View>
                   <View style={styles.contenu}>
