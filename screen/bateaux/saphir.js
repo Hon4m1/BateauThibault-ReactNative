@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
 import { images } from '../../constants/Images'
 import React from 'react';
+import Footer from '../../component/Footer';
 
 export default function saphir(props) {
     return(<View style={styles.container}>
@@ -27,9 +28,7 @@ export default function saphir(props) {
                       <Text>Que de bonheur !</Text>
                   </View>
                 </View>
-                <View style={styles.footer}>
-                    <Text>Powered by blabla</Text>
-                </View>
+                <Footer></Footer>
                 <StatusBar style="auto" />
                 </ImageBackground>
             </View>

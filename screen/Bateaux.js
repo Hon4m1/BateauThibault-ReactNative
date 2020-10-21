@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react
 import React from 'react';
 import Button from '../component/Button';
 import { images } from '../constants/Images';
+import Footer from '../../component/Footer';
 
 
 export default function bateaux(props) {
@@ -56,9 +57,7 @@ export default function bateaux(props) {
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
-                </View>
-                <View style={styles.footer}>
-                    <Text>Powered by BTK Inc.</Text>
+                    <Footer></Footer>
                 </View>
                 <StatusBar style="auto" />
                 </ImageBackground>

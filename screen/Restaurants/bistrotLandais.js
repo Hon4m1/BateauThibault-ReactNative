@@ -8,12 +8,12 @@ export default function bistrotLandais(props){
     return(
         <View style={styles.container}>
             <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
-    
+
               <View style={styles.main}>
                   <Title title="Bistrot Landais"></Title>
-                  
+
                   <Image style={styles.image} source={require("../../assets/images/Restaurants/bistrotLandais.png")}/>
-    
+
                   <View style={styles.conteneur}>
                     <Text style={styles.contacts}>XXX YYY ZZZ</Text>
                   </View>
@@ -38,7 +38,7 @@ export default function bistrotLandais(props){
           </View>
     )
     }
-    
+
     const styles = StyleSheet.create({
         container: {
           flex: 1,

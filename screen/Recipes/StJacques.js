@@ -1,6 +1,8 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
 import React from 'react';
 import { images } from '../../constants/Images'
+import Footer from '../../component/Footer';
+
 
 export default function home(props) {
     return(<View style={styles.container}>
@@ -29,9 +31,8 @@ export default function home(props) {
                     <Text>Déguster chaud nature ou accompagné d'une </Text>
                     <Text> fondue de poireaux.</Text>
                 </View>
-                <View style={styles.subfooter}>
-                    <Text>Powered by blabla</Text>
-                </View>
+                <Footer></Footer>
+
                 <StatusBar style="auto" />
                 </ImageBackground>
             </View>
@@ -51,7 +52,6 @@ const styles = StyleSheet.create({
 
     footer: {
       flex: 3,
-      fontSize: "50%",
       marginLeft: 10,
       marginRight: 10,
       marginTop: 10,

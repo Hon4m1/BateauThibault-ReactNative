@@ -9,7 +9,7 @@ export default function Contact(props) {
 
           <View style={styles.main}>
               <Title title="Le bateau de Thibault"></Title>
-              
+
               <Image style={styles.image} source={require("../assets/images/TIG.png")}/>
 
               <View style={styles.conteneur}>
@@ -31,8 +31,8 @@ export default function Contact(props) {
           <View style={styles.conteneur2}>
           <Text style={styles.contenu}>Que du bonheur!</Text>
           <Text style={styles.contenu}>Que du bonheur!</Text>
-          </View>
           <Footer></Footer>
+          </View>
           <StatusBar style="auto" />
           </ImageBackground>
       </View>

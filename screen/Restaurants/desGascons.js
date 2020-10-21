@@ -11,7 +11,7 @@ export default function desGascon(props){
 
           <View style={styles.main}>
               <Title title="Bistrot des Gascon"></Title>
-              
+
               <Image style={styles.image} source={require("../../assets/images/Restaurants/desGascons.png")}/>
 
               <View style={styles.conteneur}>

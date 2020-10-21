@@ -7,12 +7,12 @@ export default function villa9Trois(props){
     return(
         <View style={styles.container}>
             <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
-    
+
               <View style={styles.main}>
                   <Title title="Fous de L'Île"></Title>
-                  
+
                   <Image style={styles.image} source={require("../../assets/images/Restaurants/villa9Trois.png")}/>
-    
+
                   <View style={styles.conteneur}>
                     <Text style={styles.contacts}>XXX YYY ZZZ</Text>
                   </View>
@@ -37,7 +37,7 @@ export default function villa9Trois(props){
           </View>
     )
     }
-    
+
     const styles = StyleSheet.create({
         container: {
           flex: 1,

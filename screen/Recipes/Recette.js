@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
 import React from 'react';
 import { images } from '../../constants/Images'
+import Footer from '../../component/Footer';
 
 export default function home(props) {
     return(<View style={styles.container}>
@@ -32,6 +33,7 @@ export default function home(props) {
                 <View style={styles.subfooter}>
                     <Text>Powered by blabla</Text>
                 </View>
+                <Footer></Footer>
                 <StatusBar style="auto" />
                 </ImageBackground>
             </View>

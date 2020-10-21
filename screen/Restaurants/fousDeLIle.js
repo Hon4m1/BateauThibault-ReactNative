@@ -10,7 +10,7 @@ export default function fousDeLIle(props){
 
           <View style={styles.main}>
               <Title title="Fous de L'Île"></Title>
-              
+
               <Image style={styles.image} source={require("../../assets/images/Restaurants/fousDeLIle.png")}/>
 
               <View style={styles.conteneur}>

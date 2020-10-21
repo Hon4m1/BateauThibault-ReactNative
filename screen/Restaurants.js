@@ -51,9 +51,8 @@ export default function restaurants(props) {
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
+                    <Footer></Footer>
                 </View>
-
-                  <Footer></Footer>
                 <StatusBar style="auto" />
                 </ImageBackground>
             </View>

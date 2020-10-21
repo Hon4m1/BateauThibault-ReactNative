@@ -56,6 +56,7 @@ export default function recettes(props) {
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>
+                    <Footer></Footer>
                 </View>
                 <StatusBar style="auto" />
                 </ImageBackground>
