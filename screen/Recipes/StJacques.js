@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react
 import React from 'react';
 import { images } from '../../constants/Images'
 import Footer from '../../component/Footer';
+import Title from '../../component/Title'
 
 
 export default function home(props) {
@@ -9,11 +10,7 @@ export default function home(props) {
               <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
 
                 <View style={styles.main}>
-                    <View style={styles.title}>
-                        <Text style={styles.titleContent}>Noix de Saint-Jacques</Text>
-                        <Text style={styles.titleContent}> flambées au Cognac</Text>
-                    </View>
-
+                <Title title="Noix de Saint-Jacques - flambées au Cognac"></Title>
                     <Image
                     style={styles.image}
                     source = {images.stjacquesRecette.url}/>

@@ -2,15 +2,14 @@ import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react
 import React from 'react';
 import { images } from '../../constants/Images'
 import Footer from '../../component/Footer';
+import Title from '../../component/Title'
 
 export default function home(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
 
                 <View style={styles.main}>
-                    <View style={styles.title}>
-                        <Text style={styles.titleContent}>Tourteau Linguine</Text>
-                    </View>
+                  <Title title="Homard"></Title>
 
                     <Image
                     style={styles.image}

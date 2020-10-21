@@ -2,14 +2,13 @@ import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react
 import { images } from '../../constants/Images'
 import React from 'react';
 import Footer from '../../component/Footer';
+import Title from '../../component/Title';
 
 export default function gastMicher(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../../assets/background.png")} style={styles.bg}>
                 <View style={styles.main}>
-                    <View style={styles.title}>
-                        <Text style={styles.titleContent}>gastMicher</Text>
-                    </View>
+                  <Title title="Gast Micher"></Title>
                     <View style={styles.image}>
                       <Image
                       source={images.gastMicher.url}

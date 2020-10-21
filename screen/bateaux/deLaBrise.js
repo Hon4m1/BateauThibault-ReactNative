@@ -2,14 +2,13 @@ import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react
 import { images } from '../../constants/Images'
 import React from 'react';
 import Footer from '../../component/Footer';
+import Title from '../../component/Title';
 
 export default function deLaBrise(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../../assets/background.png")} style={styles.bg}>
                 <View style={styles.main}>
-                    <View style={styles.title}>
-                        <Text style={styles.titleContent}>De la Brise</Text>
-                    </View>
+                    <Title title="De La Brise"></Title>
                     <View style={styles.image}>
                       <Image
                       source={images.deLaBrise.url}
