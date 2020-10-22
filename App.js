@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Button, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { NavigationContainer, StackActions } from '@react-navigation/native'
@@ -29,6 +28,7 @@ import Bar from './screen/Recipes/Bar'
 import StJacques from './screen/Recipes/StJacques'
 import Recette from './screen/Recipes/Recette'
 import TourteauLinguine from './screen/Recipes/TourteauLinguine'
+
 
 import Contact from './screen/Contact'
 
@@ -69,6 +69,7 @@ export default function App() {
             <Stack.Screen name="villa9Trois" component={ villa9Trois } />
 
             <Stack.Screen name="Contact" component={ Contact } />
+            <Stack.Screen name="Partenaire" component={ Contact } />
           </Stack.Navigator>
         </NavigationContainer>
       </Provider>

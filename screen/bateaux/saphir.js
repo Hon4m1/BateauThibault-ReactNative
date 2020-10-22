@@ -3,15 +3,16 @@ import { images } from '../../constants/Images'
 import React from 'react';
 import Footer from '../../component/Footer';
 import Title from '../../component/Title';
+import Json from '../../services/text'
 
 export default function saphir(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../../assets/background.png")} style={styles.bg}>
                 <View style={styles.main}>
-                    <Title title="Saphir"></Title>
+                    <Title title={Json.ship.saphir.Title}></Title>
                     <View style={styles.image}>
                       <Image
-                      source={images.saphir.url}
+                      source={Json.ship.saphir.img}
                       />
                     </View>
                   <View style={styles.contenu}>

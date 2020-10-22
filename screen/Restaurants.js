@@ -1,8 +1,9 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
 import React from 'react';
 import Button from '../component/Button';
-import { images } from '../constants/Images';
 import Footer from '../component/Footer';
+import Vcard from '../component/Vcard';
+import Title from '../component/Title';
 
 
 export default function restaurants(props) {
@@ -10,14 +11,10 @@ export default function restaurants(props) {
               <ImageBackground source={require("../assets/background.png")} style={styles.image}>
 
                 <View style={styles.main}>
-                    <View style={styles.title}>
-                        <Text style={styles.titleContent}>Restaurants partenaires</Text>
-                    </View>
+                    <Title title="Restaurants Partenaires"></Title>
                     <View style={styles.contenu}>
                         <Text style={styles.contenuText}>Tous les restaurants partenaires avec le bateau de Thibault.</Text>
-                        <Text style={styles.contenuText}>06.63.99.99.78</Text>
-                        <Text style={styles.contenuText}>lebateaudethibault@gmail.com</Text>
-                        <Text style={styles.contenuText}>www.facebook.com/lebateaudethibault</Text>
+                        <Vcard></Vcard>
                     </View>
                 </View>
                 <View style={styles.buttons}>
@@ -47,7 +44,7 @@ export default function restaurants(props) {
                         navigation={props.navigation}
                         style={styles.button}></Button>
                         <Button text="Devenez Partenaire!"
-                        screen={"restaurants/partenaire"}
+                        screen={"Partenaire"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>

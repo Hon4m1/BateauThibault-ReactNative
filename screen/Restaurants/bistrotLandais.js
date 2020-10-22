@@ -2,7 +2,8 @@ import React from 'react';
 import Title from "../../component/Title";
 import { StyleSheet, Text, View, ImageBackground , Image, StatusBar} from 'react-native';
 import Footer from '../../component/Footer';
-import { images } from '../../constants/Images';
+import styles from '../../services/Style';
+import Json from '../../services/text'
 
 export default function bistrotLandais(props){
     return(
@@ -10,12 +11,12 @@ export default function bistrotLandais(props){
             <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
 
               <View style={styles.main}>
-                  <Title title="Bistrot Landais"></Title>
+                  <Title title={Json.restaurants.bistrotLandais.Title}></Title>
 
-                  <Image style={styles.image} source={require("../../assets/images/Restaurants/bistrotLandais.png")}/>
+                  <Image style={styles.image} source={Json.restaurants.bistrotLandais.img} fadeDuration={900}/>
 
                   <View style={styles.conteneur}>
-                    <Text style={styles.contacts}>XXX YYY ZZZ</Text>
+                    <Text style={styles.contacts}>{Json.restaurants.bistrotLandais.legend}</Text>
                   </View>
               </View>
               <View style={styles.conteneur}>
@@ -38,47 +39,3 @@ export default function bistrotLandais(props){
           </View>
     )
     }
-
-    const styles = StyleSheet.create({
-        container: {
-          flex: 1,
-          backgroundColor: '#fff',
-        },
-       main: {
-          flex: 5
-        },
-        buttons: {
-          flex: 4,
-        },
-        imagebackground:{
-            flex: 1,
-            resizeMode: "cover",
-            justifyContent: "center"
-        },
-        boldText: {
-            fontWeight: "bold"
-        },
-        image:{
-            flex: 5,
-            justifyContent: "center",
-            alignItems: "center",
-            resizeMode: "contain",
-            alignSelf: "center"
-        },
-        contacts: {
-            fontFamily: "Noteworthy",
-            alignSelf: "center",
-            fontSize: 15
-        },
-        contenu: {
-            fontFamily: "Noteworthy",
-            alignSelf: "center",
-            fontSize: 7
-        },
-        conteneur: {
-            flex: 2
-        },
-        conteneur2: {
-            flex : 1
-        }
-      });

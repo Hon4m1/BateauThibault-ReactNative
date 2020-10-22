@@ -1,9 +1,12 @@
 import React from 'react'
-import { StyleSheet, Text, View, ImageBackground, Image, StatusBar } from 'react-native'
+import { Text, View, ImageBackground, Image, StatusBar } from 'react-native'
 import Title from '../component/Title'
 import Footer from '../component/Footer'
+import styles from '../services/Style'
+import Vcard from '../component/Vcard'
 
 export default function Contact(props) {
+
     return(<View style={styles.container}>
         <ImageBackground source={require("../assets/background.png")} style={styles.imagebackground}>
 
@@ -12,11 +15,7 @@ export default function Contact(props) {
 
               <Image style={styles.image} source={require("../assets/images/TIG.png")}/>
 
-              <View style={styles.conteneur}>
-                <Text style={styles.contacts}>06.63.99.99.78</Text>
-                <Text style={styles.contacts}>lebateaudethibault@gmail.com</Text>
-                <Text style={styles.contacts}>www.facebook.com/lebateaudethibault</Text>
-              </View>
+              <Vcard></Vcard>
           </View>
           <View style={styles.conteneur}>
               <Text style={styles.contenu}>Qu'il est chaud le Soleil</Text>
@@ -38,47 +37,3 @@ export default function Contact(props) {
       </View>
 )
 }
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-    },
-   main: {
-      flex: 5
-    },
-    buttons: {
-      flex: 4,
-    },
-    imagebackground:{
-        flex: 1,
-        resizeMode: "cover",
-        justifyContent: "center"
-    },
-    boldText: {
-        fontWeight: "bold"
-    },
-    image:{
-        flex: 5,
-        justifyContent: "center",
-        alignItems: "center",
-        resizeMode: "contain",
-        alignSelf: "center"
-    },
-    contacts: {
-        fontFamily: "Noteworthy",
-        alignSelf: "center",
-        fontSize: 15
-    },
-    contenu: {
-        fontFamily: "Noteworthy",
-        alignSelf: "center",
-        fontSize: 7
-    },
-    conteneur: {
-        flex: 2
-    },
-    conteneur2: {
-        flex : 1
-    }
-  });
