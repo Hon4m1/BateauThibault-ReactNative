@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, ImageBackground } from 'react-native';
 import Button from '../component/Button';
 import { images } from '../constants/Images';
 import React from 'react';
@@ -9,13 +9,13 @@ import Vcard from '../component/Vcard';
 import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
 
-const fetchFonts = () => {
+/*const fetchFonts = () => {
   return Font.loadAsync({
     'SnellRoundHand': require('../assets/fonts/SnellRoundhand.ttf'),
     'Noteworthy-Bold': require('../assets/fonts/Noteworthy-Font/Noteworthy-Bold.ttf'),
     'Noteworthy': require('../assets/fonts/Noteworthy-Font/Noteworthy-Lt.ttf')
   });
-};
+};*/
 
 export default class Home extends React.Component  {
   state = {

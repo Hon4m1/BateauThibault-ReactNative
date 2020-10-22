@@ -22,18 +22,16 @@ class Product extends React.Component{
     onPress={() =>{
         if(!this.isInCart()){
             this.props.addProduct(this.props.item);
-            console.log(this.props.item);
         }else{
             this.props.removeProduct(this.props.item);
         }
-        console.log("bonjour");
     }}>
         <Image source={require("../assets/poulpe.png")} style={styles.image}></Image>
         <Text style={styles.productName} >{this.props.item.name}</Text>
         <View style={styles.priceView}>
             <Text style={styles.price}>
                 {this.isInCart()&& "OK "}
-                {this.props.item.price}
+                {this.props.item.price} €
             </Text>
         </View>
 </TouchableOpacity>
@@ -84,5 +82,6 @@ const styles = StyleSheet.create({
       marginLeft: 20,
       fontSize: 17,
       flexDirection: "row",
+      paddingRight: 2,
     }
 })

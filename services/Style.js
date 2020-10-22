@@ -29,12 +29,12 @@ const styles = StyleSheet.create({
         alignSelf: "center"
     },
     contacts: {
-        fontFamily: "Noteworthy",
+        //fontFamily: "Noteworthy",
         alignSelf: "center",
         fontSize: 15
     },
     contenu: {
-        fontFamily: "Noteworthy",
+        //fontFamily: "Noteworthy",
         alignSelf: "center",
         fontSize: 7
     },
@@ -44,16 +44,6 @@ const styles = StyleSheet.create({
     conteneur2: {
         flex : 1
     },
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-      },
-      main: {
-        flex: 5
-      },
-      buttons: {
-        flex: 4,
-      },
       footer: {
         flex: 1,
         justifyContent: "flex-end",
@@ -100,21 +90,6 @@ const styles = StyleSheet.create({
       buttons2: {
         flexDirection: "row",
       },
-      container: {
-        flex: 1,
-        backgroundColor: '#fff',
-      },
-     main: {
-        flex: 5
-      },
-      buttons: {
-        flex: 4,
-      },
-      imagebackground:{
-          flex: 1,
-          resizeMode: "cover",
-          justifyContent: "center"
-      },
       boldText: {
           fontWeight: "bold"
       },
@@ -126,22 +101,15 @@ const styles = StyleSheet.create({
           alignSelf: "center"
       },
       contacts: {
-          fontFamily: "Noteworthy",
+          //fontFamily: "Noteworthy",
           alignSelf: "center",
           fontSize: 15
       },
       contenu: {
-          fontFamily: "Noteworthy",
+          //fontFamily: "Noteworthy",
           alignSelf: "center",
           fontSize: 7
       },
-      conteneur: {
-          flex: 2
-      },
-      conteneur2: {
-          flex : 1
-      },
-
 
       Rcontainer: {
         flex: 1,
@@ -159,12 +127,6 @@ const styles = StyleSheet.create({
           marginLeft: 10,
           marginRight: 10,
           alignItems: "center"
-      },
-  
-      imagebackground:{
-          flex: 1,
-          resizeMode: "cover",
-          justifyContent: "center"
       },
       Rimage:{
           flex: 5,

@@ -98,10 +98,6 @@ const styles = StyleSheet.create({
       alignItems: "center",
       fontSize: 6,
     },
-
-    mainButton: {
-      flexDirection: "row",
-    },
     buttons1: {
       flexDirection: "row",
     },

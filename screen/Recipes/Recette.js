@@ -29,9 +29,6 @@ export default function home(props) {
                     <Text>Dans ce joli paysage</Text>
                     <Text>Moi je me balade en tongs</Text>
                 </View>
-                <View style={styles.subfooter}>
-                    <Text>Powered by blabla</Text>
-                </View>
                 <Footer></Footer>
                 <StatusBar style="auto" />
                 </ImageBackground>
