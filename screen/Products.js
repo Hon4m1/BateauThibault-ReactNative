@@ -26,7 +26,6 @@ export default class Products extends React.Component {
           <View style={styles.container}>
              <ImageBackground source={require("../assets/background.png")} style={styles.image}>
             <HeadStore navigation={this.props.navigation}></HeadStore>
-               <Text style={{marginVertical:10, textAlign:"center"}}>Choississez vos produits</Text>
                <View style={{flex:1}}>
                   <Button text="Poissons"
                   image={images.poulpe.url}

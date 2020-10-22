@@ -16,7 +16,6 @@ class Store extends React.Component {
     return(<View style={styles.container}>
       <ImageBackground source={require("../assets/background.png")} style={styles.image}>
       <HeadStore navigation={this.props.navigation}></HeadStore>
-        <Text style={{textAlign: "center"}}> Choisissez vos produits</Text>
         <View style={{flex:1}}>
           {this.props.products.map((value,index)=>{
             return <Product key={index} item={value}/>
