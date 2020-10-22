@@ -30,10 +30,12 @@ class Product extends React.Component{
     }}>
         <Image source={require("../assets/poulpe.png")} style={styles.image}></Image>
         <Text style={styles.productName} >{this.props.item.name}</Text>
-        <Text style={styles.price}>
-            {this.isInCart()&& "OK "}
-            {this.props.item.price}
-        </Text>
+        <View style={styles.priceView}>
+            <Text style={styles.price}>
+                {this.isInCart()&& "OK "}
+                {this.props.item.price}
+            </Text>
+        </View>
 </TouchableOpacity>
 }
 }
@@ -72,12 +74,15 @@ const styles = StyleSheet.create({
         alignSelf: "center",
         marginLeft: 10,
     },
+    priceView: {
+        flex: 1,
+        alignSelf: "center",
+        alignItems: "flex-end",
+    },
     price: {
-      flex: 1,
       color: "white",
       marginLeft: 20,
       fontSize: 17,
-      alignSelf: "center",
       flexDirection: "row",
     }
 })
