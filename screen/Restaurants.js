@@ -4,6 +4,7 @@ import Button from '../component/Button';
 import Footer from '../component/Footer';
 import Vcard from '../component/Vcard';
 import Title from '../component/Title';
+// import styles from '../services/Style'
 
 
 export default function restaurants(props) {
@@ -13,7 +14,7 @@ export default function restaurants(props) {
                 <View style={styles.main}>
                     <Title title="Restaurants Partenaires"></Title>
                     <View style={styles.contenu}>
-                        <Text style={styles.contenuText}>Tous les restaurants partenaires avec le bateau de Thibault.</Text>
+                        <Text style={styles.boldText}>Tous les restaurants partenaires avec le bateau de Thibault.</Text>
                         <Vcard></Vcard>
                     </View>
                 </View>
@@ -89,10 +90,8 @@ const styles = StyleSheet.create({
         color: 'white'
     },
     boldText: {
+        fontSize: 13,
         fontWeight: "bold",
-    },
-    contenuText: {
-        fontSize: 13
     },
     contenu: {
       flex: 2,

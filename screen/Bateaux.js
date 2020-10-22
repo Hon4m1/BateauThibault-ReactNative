@@ -45,12 +45,12 @@ export default function bateaux(props) {
                     <View style={styles.buttons2}>
                         <Button text="Contact"
                         image={images.ancre.url}
-                        screen={"contact"}
+                        screen={"Contact"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                         <Button text="Contact"
                         image={images.ancre.url}
-                        screen={"contact"}
+                        screen={"Contact"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import * as Font from 'expo'
 
 const styles = StyleSheet.create({
     container: {
@@ -139,7 +140,44 @@ const styles = StyleSheet.create({
       },
       conteneur2: {
           flex : 1
-      }
+      },
+
+
+      Rcontainer: {
+        flex: 1,
+        backgroundColor: '#fff',
+      },
+     Rmain: {
+        flex: 5
+      },
+      Rbutton: {
+        flex: 4,
+      },
+  
+      Rtext: {
+          flex: 3,
+          marginLeft: 10,
+          marginRight: 10,
+          alignItems: "center"
+      },
+  
+      imagebackground:{
+          flex: 1,
+          resizeMode: "cover",
+          justifyContent: "center"
+      },
+      Rimage:{
+          flex: 5,
+          justifyContent: "center",
+          alignSelf: "center",
+          resizeMode: "contain"
+      },
+      Rcontenu: {
+        flex: 2,
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: 7,
+      },
   });
 
   export default styles;

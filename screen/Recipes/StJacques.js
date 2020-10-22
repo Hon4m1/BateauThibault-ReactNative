@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
         flex: 5,
         marginTop: 50,
         justifyContent: "center",
-        alignItems: "center",
+        alignSelf: "center",
         resizeMode: "contain"
     },
     contenu: {

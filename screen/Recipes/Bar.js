@@ -5,7 +5,7 @@ import Footer from '../../component/Footer';
 import Title from '../../component/Title'
 import Json from '../../services/text'
 
-export default function home(props) {
+export default function bar(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
 
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     image:{
         flex: 5,
         justifyContent: "center",
-        alignItems: "center",
+        alignSelf: "center",
         resizeMode: "contain"
     },
     contenu: {

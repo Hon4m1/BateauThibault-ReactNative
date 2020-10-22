@@ -141,7 +141,7 @@ export default text ={
    "recipes" : {
     "homard" : {
         "Title" : "Homard en chaud-froid",
-        "img" : "",
+        "img" :  require("../assets/images/homardRecette.png"),
         "description" : ["Faites cuire les homards dans de l'eau bouillante",
                     "avec du thym, du laurier, du sel, du poivre",
                     "de Cayenne. Laissez cuire 20 minutes. Egouttez",
@@ -155,7 +155,7 @@ export default text ={
     },
     "stJacques" : {
         "Title" : "Noix de Saint-Jacques - flambées au Cognac",
-        "img" : "",
+        "img" : require("../assets/images/saintJacques.png"),
         "description" : ["Faire fondre du beurre avec des échalotes puis", 
         "ajouter les noix de Saint-Jacques. Les faire revenir",
         "en laissant les milieu translucide puis les retirer du feu.",
@@ -171,7 +171,7 @@ export default text ={
     },
     "bar" : {
         "Title" : "Bar rôti au laurier frais",
-        "img" : "",
+        "img" :  require("../assets/images/barRecette.png"),
         "description" : ["Faire fondre du beurre avec des échalotes puis ",
         "ajouter les noix de Saint-Jacques. Les faire revenir",
         "en laissant les milieu translucide puis les retirer du feu.",
@@ -187,7 +187,7 @@ export default text ={
     },
     "tourteau" : {
         "Title" : "Tourteau Linguine",
-        "img" : "",
+        "img" : require("../assets/poulpe.png"),
         "description" : ["Qu'il est chaud le Soleil",
             "Quand nous sommes en vacances",
             "Y a d'la joie, des hirondelles",
@@ -202,7 +202,7 @@ export default text ={
    },
    "contact" :{
     "Title" : "Le bateau de Thibault",
-    "img" : "",
+    "img" : require("../assets/images/TIG.png"),
     "tel" : "06.63.99.99.78",
     "mail": "lebateaudethibault@gmail.com",
     "face": "www.facebook.com/lebateaudethibault",
