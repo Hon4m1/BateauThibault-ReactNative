@@ -19,7 +19,7 @@ class Store extends React.Component {
         <Text style={{textAlign: "center"}}> Choisissez vos produits</Text>
         <View style={{flex:1}}>
           {this.props.products.map((value,index)=>{
-            return <Product key={index} item={value} fromCart="true"/>
+            return <Product key={index} item={value} fromCart="true" />
           })}
         </View>
       </ImageBackground>

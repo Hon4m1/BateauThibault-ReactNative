@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, StatusBar, ImageBackground, Image, TouchableOpacity } from 'react-native';
+import { Modal, StyleSheet, Text, View, StatusBar, ImageBackground, Image, TouchableOpacity } from 'react-native';
 import { images } from '../constants/Images'
 import Button from '../component/Button';
 
@@ -11,6 +11,10 @@ class Product extends React.Component{
 
   fromCart = false;
 
+  state = {
+    modalVisible: false
+  };
+
     isInCart(){
         let result= this.props.products.filter(value=>{
             return value.id==this.props.item.id;
@@ -18,13 +22,16 @@ class Product extends React.Component{
         return result.length>0;
     }
 
+    setModalVisible = (visible) => {
+      this.setState({ modalVisible: visible });
+    }
 
     render(){
     return <TouchableOpacity style={styles.container}
     onPress={() =>{
       this.fromCart = this.props.fromCart;
       if (this.fromCart){
-        console.log("HEY BITE")
+
       }
       else{
         if(!this.isInCart()){
@@ -34,7 +41,6 @@ class Product extends React.Component{
           this.props.removeProduct(this.props.item);
         }
       }
-        console.log("bonjour");
     }}>
         <Image source={require("../assets/poulpe.png")} style={styles.image}></Image>
         <Text style={styles.productName} >{this.props.item.name}</Text>
