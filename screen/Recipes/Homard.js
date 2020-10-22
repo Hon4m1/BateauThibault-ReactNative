@@ -9,7 +9,7 @@ export default function home(props) {
               <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
 
                 <View style={styles.main}>
-                  <Title title="Homard"></Title>
+                  <Title title="Homard en chaud-Froid"></Title>
 
                     <Image
                     style={styles.image}

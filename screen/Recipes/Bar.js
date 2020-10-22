@@ -3,17 +3,18 @@ import { images } from '../../constants/Images'
 import React from 'react';
 import Footer from '../../component/Footer';
 import Title from '../../component/Title'
+import Json from '../../services/text'
 
 export default function home(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
 
                 <View style={styles.main}>
-                  <Title title="Bar"></Title>
+                  <Title title={Json.recipes.bar.Title}></Title>
 
                     <Image
                     style={styles.image}
-                    source = {images.barRecette.url}/>
+                    source = {Json.recipes.bar.img}/>
                 </View>
                 <View style={styles.footer}>
                     <Text>Sur une plaque ou plat allant au four, disposer</Text>
@@ -23,9 +24,6 @@ export default function home(props) {
                     <Text> gros sel sur la peau</Text>
                     <Text>Cuire au four 12min à 240°C</Text>
 
-                </View>
-                <View style={styles.subfooter}>
-                    <Text>Powered by blabla</Text>
                 </View>
                 <Footer></Footer>
                 <StatusBar style="auto" />

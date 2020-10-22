@@ -4,18 +4,18 @@ import { images } from '../constants/Images'
 import React from 'react';
 import Title from '../component/Title'
 import Footer from '../component/Footer'
+import Json from '../services/text'
+import Vcard from '../component/Vcard';
 
 export default function home(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../assets/background.png")} style={styles.image}>
                 <View style={styles.main}>
-                    <Title title="Le bateau de Thibault"></Title>
+                    <Title title={Json.contact.Title}></Title>
                     <View style={styles.contenu}>
                         <Text style={styles.boldText}>Vente en direct de notre bateau</Text>
                         <Text style={styles.boldText}>Produits selon la saison, Livraison sur Paris</Text>
-                        <Text>06.63.99.99.78</Text>
-                        <Text>lebateaudethibault@gmail.com</Text>
-                        <Text>www.facebook.com/lebateaudethibault</Text>
+                        <Vcard></Vcard>
                     </View>
                 </View>
                 <View style={styles.buttons}>

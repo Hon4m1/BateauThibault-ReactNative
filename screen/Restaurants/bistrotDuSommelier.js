@@ -2,19 +2,21 @@ import React from 'react';
 import Title from "../../component/Title";
 import { StyleSheet, Text, View, ImageBackground, Image, StatusBar } from 'react-native';
 import Footer from '../../component/Footer';
+import styles from '../../services/Style';
+import Json from '../../services/text'
 
 export default function bistrotDuSommelier(props){
-    return(
+   return(
     <View style={styles.container}>
         <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
 
           <View style={styles.main}>
               <Title title="Bistrot du Sommelier"></Title>
               
-              <Image style={styles.image} source={require("../../assets/images/Restaurants/duSommelier.png")}/>
+              <Image style={styles.image} source={Json.restaurants.duSommelier.img} fadeDuration={900}/>
 
               <View style={styles.conteneur}>
-                <Text style={styles.contacts}>XXX YYY ZZZ</Text>
+                <Text style={styles.contacts}>{Json.restaurants.duSommelier.legend}</Text>
               </View>
           </View>
           <View style={styles.conteneur}>
@@ -37,47 +39,3 @@ export default function bistrotDuSommelier(props){
       </View>
 )
 }
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-    },
-   main: {
-      flex: 5
-    },
-    buttons: {
-      flex: 4,
-    },
-    imagebackground:{
-        flex: 1,
-        resizeMode: "cover",
-        justifyContent: "center"
-    },
-    boldText: {
-        fontWeight: "bold"
-    },
-    image:{
-        flex: 5,
-        justifyContent: "center",
-        alignItems: "center",
-        resizeMode: "contain",
-        alignSelf: "center"
-    },
-    contacts: {
-        fontFamily: "Noteworthy",
-        alignSelf: "center",
-        fontSize: 15
-    },
-    contenu: {
-        fontFamily: "Noteworthy",
-        alignSelf: "center",
-        fontSize: 7
-    },
-    conteneur: {
-        flex: 2
-    },
-    conteneur2: {
-        flex : 1
-    }
-  });
