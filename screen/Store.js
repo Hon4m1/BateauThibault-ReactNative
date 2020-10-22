@@ -6,6 +6,7 @@ import Title from '../component/Title'
 import Footer from '../component/Footer'
 import HeadStore from '../component/HeadStore'
 import Product from '../component/Product'
+import ProductCart from '../component/ProductCart'
 import Reducer from '../store/reducer/cartReducer'
 import { connect } from 'react-redux';
 
@@ -19,7 +20,7 @@ class Store extends React.Component {
         <Text style={{textAlign: "center"}}> Choisissez vos produits</Text>
         <View style={{flex:1}}>
           {this.props.products.map((value,index)=>{
-            return <Product key={index} item={value} fromCart="true" />
+            return <ProductCart key={index} item={value}/>
           })}
         </View>
       </ImageBackground>

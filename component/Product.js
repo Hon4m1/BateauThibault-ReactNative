@@ -9,12 +9,6 @@ import { connect } from 'react-redux';
 
 class Product extends React.Component{
 
-  fromCart = false;
-
-  state = {
-    modalVisible: false
-  };
-
     isInCart(){
         let result= this.props.products.filter(value=>{
             return value.id==this.props.item.id;
@@ -22,31 +16,25 @@ class Product extends React.Component{
         return result.length>0;
     }
 
-    setModalVisible = (visible) => {
-      this.setState({ modalVisible: visible });
-    }
-
     render(){
     return <TouchableOpacity style={styles.container}
     onPress={() =>{
       this.fromCart = this.props.fromCart;
-      if (this.fromCart){
 
+      if(!this.isInCart()){
+        this.props.addProduct(this.props.item);
+        console.log(this.props);
+      }else{
+        this.props.removeProduct(this.props.item);
       }
-      else{
-        if(!this.isInCart()){
-          this.props.addProduct(this.props.item);
-          console.log(this.props);
-        }else{
-          this.props.removeProduct(this.props.item);
-        }
-      }
+
+        console.log("bonjour");
     }}>
         <Image source={require("../assets/poulpe.png")} style={styles.image}></Image>
         <Text style={styles.productName} >{this.props.item.name}</Text>
         <Text style={styles.price}>
             {this.isInCart()&& "OK "}
-            {this.props.item.price}
+            {this.props.item.price} €
         </Text>
 </TouchableOpacity>
 }
