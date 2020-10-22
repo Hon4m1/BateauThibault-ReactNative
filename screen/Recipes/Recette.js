@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     image:{
         flex: 5,
         justifyContent: "center",
-        alignItems: "center",
+        alignSelf: "center",
         resizeMode: "contain"
     },
     contenu: {

@@ -3,24 +3,25 @@ import React from 'react';
 import Title from '../../component/Title'
 import Footer from '../../component/Footer'
 import { images } from '../../constants/Images'
+import styles from '../../services/Style'
 
 
 export default function TourteauLinguine(props) {
-    return(<View style={styles.container}>
+    return(<View style={styles.Rcontainer}>
               <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
 
-                <View style={styles.main}>
+                <View style={styles.Rmain}>
                     <Title title="Tourteau Linguine"></Title>
                     
                     <Image 
-                    style={styles.image}
+                    style={styles.Rimage}
                     source = {images.poulpe.url}/>
 
-                    <View style={styles.contenu}>
+                    <View style={styles.Rcontenu}>
                         <Text>XXX YYY ZZZ</Text>
                     </View>
                 </View>
-                <View style={styles.footer}>
+                <View style={styles.Rtext}>
                     <Text>Qu'il est chaud le Soleil</Text>
                     <Text>Quand nous sommes en vacances</Text>
                     <Text>Y a d'la joie, des hirondelles</Text>
@@ -36,60 +37,3 @@ export default function TourteauLinguine(props) {
             </View>
     )
 }
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-    },
-   main: {
-      flex: 5
-    },
-    buttons: {
-      flex: 4,
-    },
-
-    footer: {
-        flex: 3,
-        marginLeft: 10,
-        marginRight: 10,
-        alignItems: "center"
-    },
-
-    subfooter: {
-      flex: 1,
-      justifyContent: "flex-end",
-      alignItems: "center"
-    },
-
-    imagebackground:{
-        flex: 1,
-        resizeMode: "cover",
-        justifyContent: "center"
-    },
-    title: {
-      flex: 1,
-      alignSelf: "center",
-      marginTop: 50,
-    },
-    titleContent: {
-        fontStyle: 'italic',
-        fontSize: 25,
-        color: 'white'
-    },
-    boldText: {
-        fontWeight: "bold"
-    },
-
-    image:{
-        flex: 5,
-        justifyContent: "center",
-        alignItems: "center",
-        resizeMode: "contain"
-    },
-    contenu: {
-      flex: 2,
-      alignItems: "center",
-      justifyContent: "center",
-      fontSize: 7,
-    },
-  });
