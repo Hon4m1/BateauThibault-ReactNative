@@ -5,12 +5,14 @@ import { createStackNavigator } from '@react-navigation/stack'
 import Home from './screen/Home'
 import { Provider, ReactReduxContext } from 'react-redux';
 /*import (Provider) from 'react-redux'
-import store from "./store/configurestore.js"*/
+import store from "./store/configurestore.js"
+import { SafeAreaProvider } from */
 import Products from './screen/Products'
 import productsList from './screen/productsList'
 import Bateaux from './screen/Bateaux'
 import Recettes from './screen/Recettes'
 import Restaurants from './screen/Restaurants'
+import Store from './screen/Store'
 
 import deLaBrise from './screen/bateaux/deLaBrise'
 import aquilon from './screen/bateaux/aquilon'
@@ -47,6 +49,7 @@ export default function App() {
             <Stack.Screen name="bateaux" component={ Bateaux } />
             <Stack.Screen name="deLaBrise" component={ deLaBrise } />
             <Stack.Screen name="products" component={ Products } />
+            <Stack.Screen name="store" component={ Store } />
 
             <Stack.Screen name="productsList" component={ productsList } />
             <Stack.Screen name="restaurants" component={ Restaurants } />

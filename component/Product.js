@@ -1,5 +1,7 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image, TouchableOpacity } from 'react-native';
 import { images } from '../constants/Images'
+import Button from '../component/Button';
+
 import React from 'react';
 
 import { addProduct, removeProduct } from '../store/actions/cartActions';
@@ -9,14 +11,14 @@ class Product extends React.Component{
 
     isInCart(){
         let result= this.props.products.filter(value=>{
-            return value.name==this.props.item.name;
+            return value.id==this.props.item.id;
         })
         return result.length>0;
     }
 
 
     render(){
-    return <TouchableOpacity style={StyleSheet.container}
+    return <TouchableOpacity style={styles.container}
     onPress={() =>{
         if(!this.isInCart()){
             this.props.addProduct(this.props.item);
@@ -24,13 +26,16 @@ class Product extends React.Component{
         }else{
             this.props.removeProduct(this.props.item);
         }
+        console.log("bonjour");
     }}>
-        <Image source={images.poulpe.url}></Image>
-        <Text style={{marginVertical:10, textAlign:"center"}}>{this.props.item.name}</Text>
-        <Text>
-            {this.isInCart()&& "OK "}
-            {this.props.item.price}
-        </Text>
+        <Image source={require("../assets/poulpe.png")} style={styles.image}></Image>
+        <Text style={styles.productName} >{this.props.item.name}</Text>
+        <View style={styles.priceView}>
+            <Text style={styles.price}>
+                {this.isInCart()&& "OK "}
+                {this.props.item.price}
+            </Text>
+        </View>
 </TouchableOpacity>
 }
 }
@@ -49,3 +54,35 @@ const mapDispatchToProps = dispatch => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Product);
+
+const styles = StyleSheet.create({
+    container: {
+        height: 50,
+        backgroundColor: 'rgba(52, 52, 52, 0.3)',
+        flexDirection: "row",
+        borderTopWidth: 0.2,
+    },
+    image: {
+        height: 40,
+        width: 40,
+        alignSelf: "center",
+        marginLeft: 5,
+    },
+    productName: {
+        fontSize: 17,
+        color: "white",
+        alignSelf: "center",
+        marginLeft: 10,
+    },
+    priceView: {
+        flex: 1,
+        alignSelf: "center",
+        alignItems: "flex-end",
+    },
+    price: {
+      color: "white",
+      marginLeft: 20,
+      fontSize: 17,
+      flexDirection: "row",
+    }
+})

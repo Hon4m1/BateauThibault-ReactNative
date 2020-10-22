@@ -4,39 +4,8 @@ import { images } from '../constants/Images';
 import Title from '../component/Title';
 import Footer from '../component/Footer';
 import  { getRessources }  from '../services/apirest'
+import HeadStore from '../component/HeadStore'
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image, ReactComponent, Header } from 'react-native';
-
-/*
-export default function products(props) {
-    return(<View style={styles.container}>
-              <ImageBackground source={require("../assets/background.png")} style={styles.image}>
-
-                <View style={styles.main}>
-                    <Title title="Le bateau de Thibault"></Title>
-                    <View style={styles.contenu}>
-                        <Text style={styles.boldText}>Vente en direct de notre bateau</Text>
-                        <Text style={styles.boldText}>Produits selon la saison, Livraison sur Paris</Text>
-                        <Text>06.63.99.99.78</Text>
-                        <Text>lebateaudethibault@gmail.com</Text>
-                        <Text>www.facebook.com/lebateaudethibault</Text>
-                    </View>
-                </View>
-                <View style={styles.buttons}>
-                    <View style={styles.mainButton}>
-                        <Button text="Produits et promotions"
-                            image={images.poisson.url}
-                            screen={"products"}
-                            navigation={props.navigation}
-                            style={styles.button}></Button>
-                    </View>
-
-                </View>
-                <StatusBar style="auto" />
-                </ImageBackground>
-                <Footer></Footer>
-            </View>
-    )
-}*/
 
 export default class Products extends React.Component {
 
@@ -52,8 +21,11 @@ export default class Products extends React.Component {
 
     render(){
       return(
-          <View style="container">
-               <Text style={{marginVertical:10, textAlign:"center"}}>Choississez vos produits</Text>
+          
+          
+          <View style={styles.container}>
+             <ImageBackground source={require("../assets/background.png")} style={styles.image}>
+            <HeadStore navigation={this.props.navigation}></HeadStore>
                <View style={{flex:1}}>
                   <Button text="Poissons"
                   image={images.poulpe.url}
@@ -76,6 +48,7 @@ export default class Products extends React.Component {
                   navigation={this.props.navigation}
                   data={this.state.data.filter(value=>value.discount!=0)}></Button>
               </View>
+              </ImageBackground>
           </View>
       )
   }
@@ -121,14 +94,4 @@ const styles = StyleSheet.create({
       alignItems: "center",
       fontSize: 7,
     },
-
-    mainButton: {
-      flexDirection: "row",
-    },
-    buttons1: {
-      flexDirection: "row",
-    },
-    buttons2: {
-      flexDirection: "row",
-    }
   });
