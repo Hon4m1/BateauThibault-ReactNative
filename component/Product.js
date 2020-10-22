@@ -9,6 +9,8 @@ import { connect } from 'react-redux';
 
 class Product extends React.Component{
 
+  fromCart = false;
+
     isInCart(){
         let result= this.props.products.filter(value=>{
             return value.id==this.props.item.id;
@@ -20,12 +22,18 @@ class Product extends React.Component{
     render(){
     return <TouchableOpacity style={styles.container}
     onPress={() =>{
+      this.fromCart = this.props.fromCart;
+      if (this.fromCart){
+        console.log("HEY BITE")
+      }
+      else{
         if(!this.isInCart()){
-            this.props.addProduct(this.props.item);
-            console.log(this.props.item);
+          this.props.addProduct(this.props.item);
+          console.log(this.props);
         }else{
-            this.props.removeProduct(this.props.item);
+          this.props.removeProduct(this.props.item);
         }
+      }
         console.log("bonjour");
     }}>
         <Image source={require("../assets/poulpe.png")} style={styles.image}></Image>
