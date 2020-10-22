@@ -79,10 +79,12 @@ const styles = StyleSheet.create({
     },
 
     image:{
-        flex: 5,
+        
+        marginLeft: "18%",
         justifyContent: "center",
         alignItems: "center",
-        resizeMode: "contain"
+
+
     },
     contenu: {
       flex: 2,
