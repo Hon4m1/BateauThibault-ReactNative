@@ -28,10 +28,8 @@ export default function bistrotLandais(props){
                   <Text style={styles.contenu}>Maman lit dans la chaise longue</Text>
                   <Text style={styles.contenu}>Dans ce joli paysage</Text>
                   <Text style={styles.contenu}>Moi je me balade en tongs</Text>
-              </View>
-              <View style={styles.conteneur2}>
-              <Text style={styles.contenu}>Que du bonheur!</Text>
-              <Text style={styles.contenu}>Que du bonheur!</Text>
+                  <Text style={styles.contenu}>{'\n'}Que du bonheur!</Text>
+                  <Text style={styles.contenu}>Que du bonheur!</Text>
               </View>
               <Footer></Footer>
               <StatusBar style="auto" />

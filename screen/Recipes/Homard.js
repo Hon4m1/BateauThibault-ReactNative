@@ -26,9 +26,6 @@ export default function home(props) {
                     <Text>et la ciboulette ciselée</Text>
 
                 </View>
-                <View style={styles.subfooter}>
-                    <Text>Powered by blabla</Text>
-                </View>
                 <Footer></Footer>
                 <StatusBar style="auto" />
                 </ImageBackground>

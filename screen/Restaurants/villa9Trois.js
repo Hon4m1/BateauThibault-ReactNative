@@ -20,18 +20,18 @@ export default function villa9Trois(props){
                   </View>
               </View>
               <View style={styles.conteneur}>
-                  <Text style={styles.contenu}>Qu'il est chaud le Soleil</Text>
-                  <Text style={styles.contenu}>Quand nous sommes en vacances</Text>
-                  <Text style={styles.contenu}>Y a d'la joie, des hirondelles</Text>
-                  <Text style={styles.contenu}>C'est le sud de la France</Text>
-                  <Text style={styles.contenu}>Papa bricole au garage</Text>
-                  <Text style={styles.contenu}>Maman lit dans la chaise longue</Text>
-                  <Text style={styles.contenu}>Dans ce joli paysage</Text>
-                  <Text style={styles.contenu}>Moi je me balade en tongs</Text>
+                <Text style={styles.contenu}>Qu'il est chaud le Soleil</Text>
+                <Text style={styles.contenu}>Quand nous sommes en vacances</Text>
+                <Text style={styles.contenu}>Y a d'la joie, des hirondelles</Text>
+                <Text style={styles.contenu}>C'est le sud de la France</Text>
+                <Text style={styles.contenu}>Papa bricole au garage</Text>
+                <Text style={styles.contenu}>Maman lit dans la chaise longue</Text>
+                <Text style={styles.contenu}>Dans ce joli paysage</Text>
+                <Text style={styles.contenu}>Moi je me balade en tongs</Text>
+                <Text style={styles.contenu}>{'\n'}Que du bonheur!</Text>
+                <Text style={styles.contenu}>Que du bonheur!</Text>
               </View>
               <View style={styles.conteneur2}>
-              <Text style={styles.contenu}>Que du bonheur!</Text>
-              <Text style={styles.contenu}>Que du bonheur!</Text>
               </View>
               <Footer></Footer>
               <StatusBar style="auto" />

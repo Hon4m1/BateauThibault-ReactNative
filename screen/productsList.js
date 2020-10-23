@@ -2,6 +2,7 @@ import React from 'react'
 import { StyleSheet, View, Text, ImageBackground} from 'react-native';
 import Product from '../component/Product';
 import HeadStore from '../component/HeadStore';
+import Footer from '../component/Footer';
 
 export default class ProductsList extends React.Component {
   render(){
@@ -10,11 +11,15 @@ export default class ProductsList extends React.Component {
     return <View style={styles.container}>
             <ImageBackground source={require("../assets/background.png")} style={styles.image}>
             <HeadStore navigation={this.props.navigation}></HeadStore>
-              <View style={{flex:1}}>
-                {products.map((value,index)=>{
-                  return <Product key={index} item={value}/>
-                })}
-              </View>
+            <View style={styles.header2}>
+                <Text> Choisissez vos produits</Text>
+            </View>
+            <View style={{flex:1}}>
+              {products.map((value,index)=>{
+                return <Product key={index} item={value}/>
+              })}
+            </View>
+            <Footer></Footer>
             </ImageBackground>
           </View>
   }
@@ -35,5 +40,11 @@ const styles = StyleSheet.create({
       flex: 1,
       resizeMode: "cover",
       justifyContent: "center"
-  }
+  },
+  header2: {
+    alignItems: "center",
+    flexDirection: "row",
+    alignSelf: "center",
+    marginTop: "2%",
+}
 })

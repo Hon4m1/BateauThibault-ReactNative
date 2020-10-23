@@ -17,9 +17,6 @@ export default function HeadStore(props){
                     <Image source={require("../assets/icons/cartLogo.png")} style={styles.logoR}></Image>
                     </TouchableOpacity>
                 </View>
-                <View style={styles.header2}>
-                    <Text style={styles.title}> Choisissez vos produits</Text>
-                </View>
             </View>
 }
 const styles = StyleSheet.create({
@@ -58,10 +55,5 @@ const styles = StyleSheet.create({
         alignItems: "center",
         flexDirection: "row",
         backgroundColor: "black",
-    },
-    header2: {
-        alignItems: "center",
-        flexDirection: "row",
-        alignSelf: "center",
     }
 });

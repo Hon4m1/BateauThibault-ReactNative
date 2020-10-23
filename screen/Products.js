@@ -24,8 +24,11 @@ export default class Products extends React.Component {
           
           
           <View style={styles.container}>
-             <ImageBackground source={require("../assets/background.png")} style={styles.image}>
+            <ImageBackground source={require("../assets/background.png")} style={styles.image}>
             <HeadStore navigation={this.props.navigation}></HeadStore>
+            <View style={styles.header2}>
+                <Text> Choisissez vos produits</Text>
+            </View>
                <View style={{flex:1}}>
                   <Button text="Poissons"
                   image={images.poulpe.url}
@@ -48,6 +51,7 @@ export default class Products extends React.Component {
                   navigation={this.props.navigation}
                   data={this.state.data.filter(value=>value.discount!=0)}></Button>
               </View>
+              <Footer></Footer>
               </ImageBackground>
           </View>
       )
@@ -76,11 +80,6 @@ const styles = StyleSheet.create({
         resizeMode: "cover",
         justifyContent: "center"
     },
-    title: {
-      flex: 1,
-      alignSelf: "center",
-      marginTop: 50,
-    },
     titleContent: {
         fontStyle: 'italic',
         fontSize: 25,
@@ -94,4 +93,10 @@ const styles = StyleSheet.create({
       alignItems: "center",
       fontSize: 7,
     },
+    header2: {
+      alignItems: "center",
+      flexDirection: "row",
+      alignSelf: "center",
+      marginTop: "2%",
+  }
   });
