@@ -3,8 +3,9 @@ import Button from '../component/Button';
 import { images } from '../constants/Images';
 import Title from '../component/Title';
 import Footer from '../component/Footer';
-import  { getRessources }  from '../services/apirest'
-import HeadStore from '../component/HeadStore'
+import  { getRessources }  from '../services/apirest';
+import HeadStore from '../component/HeadStore';
+import styles from '../services/Style';
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image, ReactComponent, Header } from 'react-native';
 
 export default class Products extends React.Component {
@@ -20,12 +21,13 @@ export default class Products extends React.Component {
     }
 
     render(){
-      return(
-          
-          
+      return(     
           <View style={styles.container}>
-             <ImageBackground source={require("../assets/background.png")} style={styles.image}>
+             <ImageBackground source={require("../assets/background.png")} style={styles.Pimage}>
             <HeadStore navigation={this.props.navigation}></HeadStore>
+            <View style={styles.header2}>
+                    <Text> Choisissez vos produits</Text>
+            </View>
                <View style={{flex:1}}>
                   <Button text="Poissons"
                   image={images.poulpe.url}
@@ -53,45 +55,3 @@ export default class Products extends React.Component {
       )
   }
 }
-
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-    },
-    main: {
-      flex: 5
-    },
-    buttons: {
-      flex: 4,
-    },
-    footer: {
-      flex: 1,
-      justifyContent: "flex-end",
-      alignItems: "center"
-    },
-    image:{
-        flex: 1,
-        resizeMode: "cover",
-        justifyContent: "center"
-    },
-    title: {
-      flex: 1,
-      alignSelf: "center",
-      marginTop: 50,
-    },
-    titleContent: {
-        fontStyle: 'italic',
-        fontSize: 25,
-        color: 'white'
-    },
-    boldText: {
-        fontWeight: "bold"
-    },
-    contenu: {
-      flex: 2,
-      alignItems: "center",
-      fontSize: 7,
-    },
-  });

@@ -1,5 +1,6 @@
 import { Text, TouchableOpacity, StyleSheet, Image, View, ImageBackground } from 'react-native';
 import React from 'react';
+// import styles from '../services/Style'
 
 
 export default function HeadStore(props){
@@ -16,9 +17,6 @@ export default function HeadStore(props){
                     onPress={() => props.navigation.navigate("store")}>
                     <Image source={require("../assets/icons/cartLogo.png")} style={styles.logoR}></Image>
                     </TouchableOpacity>
-                </View>
-                <View style={styles.header2}>
-                    <Text style={styles.title}> Choisissez vos produits</Text>
                 </View>
             </View>
 }

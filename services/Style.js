@@ -81,6 +81,20 @@ const styles = StyleSheet.create({
         alignItems: "center",
         fontSize: 6,
       },
+      //Products
+      Pimage:{
+        flex: 1,
+        resizeMode: "cover",
+        justifyContent: "center"
+      },
+      header2: {
+        alignItems: "center",
+        flexDirection: "row",
+        alignSelf: "center",
+        marginTop: "2%"
+    }
+
+      
   });
 
   export default styles;

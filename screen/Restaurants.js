@@ -56,36 +56,3 @@ export default function restaurants(props) {
             </View>
     )
 }
-
-// const styles = StyleSheet.create({
-    // container: {
-    //   flex: 1,
-    //   backgroundColor: '#fff',
-    // },
-    // main: {
-    //   flex: 5
-    // },
-    // buttons: {
-    //   flex: 4,
-    // },
-    // image:{
-    //     flex: 1,
-    //     resizeMode: "cover",
-    //     justifyContent: "center"
-    // },
-    // boldText: {
-    //     fontSize: 13,
-    //     fontWeight: "bold",
-    // },
-  //   Rscontenu: {
-  //     flex: 2,
-  //     alignItems: "center",
-  //     fontSize: 6,
-  //   },
-  //   Rsbutton1: {
-  //     flexDirection: "row",
-  //   },
-  //   Rsbuttons2: {
-  //     flexDirection: "row",
-  //   }
-  // });
