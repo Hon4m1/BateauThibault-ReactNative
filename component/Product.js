@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, StatusBar, ImageBackground, Image, TouchableOpacity } from 'react-native';
+import { Modal, StyleSheet, Text, View, StatusBar, ImageBackground, Image, TouchableOpacity } from 'react-native';
 import { images } from '../constants/Images'
 import Button from '../component/Button';
 
@@ -16,10 +16,10 @@ class Product extends React.Component{
         return result.length>0;
     }
 
-
     render(){
     return <TouchableOpacity style={styles.container}
     onPress={() =>{
+
         if(!this.isInCart()){
             this.props.addProduct(this.props.item);
         }else{
