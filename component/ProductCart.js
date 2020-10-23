@@ -5,20 +5,19 @@ import {
   StyleSheet,
   Text,
   TouchableHighlight,
+  TouchableOpacity,
   View,
   Image
 } from "react-native";
 import { addProduct, removeProduct } from '../store/actions/cartActions';
 import { connect } from 'react-redux';
 
+
 class ProductCart extends React.Component {
   state = {
-    modalVisible: false
+    modalVisible: false,
+    quantity: 1
   };
-
-  setModalVisible = (visible) => {
-    this.setState({ modalVisible: visible });
-  }
 
   isInCart(){
       let result= this.props.products.filter(value=>{
@@ -27,12 +26,16 @@ class ProductCart extends React.Component {
       return result.length>0;
   }
 
+  setModalVisible = (visible) => {
+    this.setState({ modalVisible: visible });
+  }
+
   render() {
     const { modalVisible } = this.state;
     return (
       <View style={styles.centeredView}>
         <Modal
-          animationType="slide"a
+          animationType="slide"
           transparent={true}
           visible={modalVisible}
           onRequestClose={() => {
@@ -41,8 +44,54 @@ class ProductCart extends React.Component {
         >
           <View style={styles.centeredView}>
             <View style={styles.modalView}>
-              <Text style={styles.modalText}>Hello World!</Text>
+              <Text style={styles.modalText}>Choisissez votre quantité :</Text>
 
+              <TouchableOpacity onPress={() => this.setState({quantity:5})}>
+              <Text>
+              5
+              </Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity onPress={() => this.setState({quantity:4})}>
+              <Text>
+              4
+              </Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity onPress={() => this.setState({quantity:3})}>
+              <Text>
+              3
+              </Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity onPress={() => this.setState({quantity:2})}>
+              <Text>
+              2
+              </Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity onPress={() => this.setState({quantity:1})}>
+              <Text>
+              1
+              </Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity onPress= { () => {
+                    if(this.state.quantity > 1) {
+                      this.setState({quantity: this.state.quantity-1})
+                    }
+                  }
+                } >
+              <Text>
+              - 1
+              </Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity onPress={() => this.setState({quantity: this.state.quantity+1})}>
+              <Text>
+              + 1
+              </Text>
+              </TouchableOpacity>
               <TouchableHighlight
                 style={{ ...styles.openButton, backgroundColor: "#2196F3" }}
                 onPress={() => {
@@ -55,20 +104,20 @@ class ProductCart extends React.Component {
           </View>
         </Modal>
 
-        <TouchableHighlight
+        <TouchableOpacity
           style={styles.openButton}
           onPress={() => {
             this.setModalVisible(true);
           }}
         >
         <Image source={require("../assets/poulpe.png")} style={styles.image}></Image>
-          <Text style={styles.productName} >{this.props.item.name}</Text>
-          <Text style={styles.price}>
-              {this.isInCart()&& "OK "}
-              {this.quantity}x
-              {this.props.item.price} €
-          </Text>
-        </TouchableHighlight>
+        <Text style={styles.productName} >{this.props.item.name}</Text>
+        <Text style={styles.price}>
+            {this.isInCart()&& "OK "}
+            {this.props.item.price} €
+            {this.state.quantity}
+        </Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -110,15 +159,21 @@ const styles = StyleSheet.create({
     elevation: 5
   },
   openButton: {
-    backgroundColor: "#F194FF",
-    borderRadius: 20,
-    padding: 10,
-    elevation: 2
+    height: 50,
+    backgroundColor: 'rgba(52, 52, 52, 0.3)',
+    flexDirection: "row",
+    borderTopWidth: 0.2,
   },
   textStyle: {
     color: "white",
     fontWeight: "bold",
     textAlign: "center"
+  },
+  image: {
+      height: 40,
+      width: 40,
+      alignSelf: "center",
+      marginLeft: 5,
   },
   modalText: {
     marginBottom: 15,
@@ -126,4 +181,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default ProductCart;
+export default connect(mapStateToProps, mapDispatchToProps)(ProductCart);
