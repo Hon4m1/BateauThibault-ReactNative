@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import * as Font from 'expo'
 
 const styles = StyleSheet.create({
     container: {
@@ -19,7 +18,6 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     },
     contenu: {
-        //fontFamily: "Noteworthy",
         alignSelf: "center",
         fontSize: 7
     },
@@ -60,7 +58,6 @@ const styles = StyleSheet.create({
         flexDirection: "row",
       },
       contacts: {
-          //fontFamily: "Noteworthy",
           alignSelf: "center",
           fontSize: 15
       },
