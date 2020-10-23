@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
-import { images } from '../../constants/Images'
+import { Text, View, StatusBar, ImageBackground, Image } from 'react-native';
+import Json from '../../services/text'
 import React from 'react';
 import Footer from '../../component/Footer';
 import Title from '../../component/Title';
@@ -12,7 +12,7 @@ export default function gastMicher(props) {
                   <Title title="Gast Micher"></Title>
                     <View style={styles.image}>
                       <Image
-                      source={images.gastMicher.url}
+                      source={Json.ship.gastMich.img}
                       />
                     </View>
                   <View style={styles.contenu}>

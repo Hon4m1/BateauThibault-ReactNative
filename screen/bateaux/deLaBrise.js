@@ -1,10 +1,9 @@
 import { Text, View, StatusBar, ImageBackground, Image } from 'react-native';
-import { images } from '../../constants/Images'
 import React from 'react';
 import Footer from '../../component/Footer';
 import Title from '../../component/Title';
 import styles from '../../services/Style';
-import Json from '../../services/text'
+import Json from '../../services/text';
 
 export default function deLaBrise(props) {
     return(<View style={styles.container}>

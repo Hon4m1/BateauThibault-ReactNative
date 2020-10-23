@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
-import { images } from '../../constants/Images'
 import React from 'react';
+import styles from '../../services/Style';
 import Footer from '../../component/Footer';
-import Title from '../../component/Title'
-import Json from '../../services/text'
+import Title from '../../component/Title';
+import Json from '../../services/text';
 
 export default function bar(props) {
     return(<View style={styles.container}>
@@ -16,7 +16,7 @@ export default function bar(props) {
                     style={styles.image}
                     source = {Json.recipes.bar.img}/>
                 </View>
-                <View style={styles.footer}>
+                <View style={styles.Rcontenu}>
                     <Text>Sur une plaque ou plat allant au four, disposer</Text>
                     <Text>quelques feuilles de laurier frais,verser un filet</Text>
                     <Text>d'huile d'olive et du gros sel. Disposer le bar, puis </Text>
@@ -31,60 +31,3 @@ export default function bar(props) {
             </View>
     )
 }
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-    },
-   main: {
-      flex: 5
-    },
-    buttons: {
-      flex: 4,
-    },
-
-    footer: {
-      flex: 3,
-      marginLeft: 10,
-      marginRight: 10,
-      justifyContent: "center",
-      alignItems: "center"
-    },
-
-    subfooter: {
-      flex: 1,
-      justifyContent: "flex-end",
-      alignItems: "center"
-    },
-
-    imagebackground:{
-        flex: 1,
-        resizeMode: "cover",
-        justifyContent: "center"
-    },
-    title: {
-      flex: 1,
-      alignSelf: "center",
-      marginTop: 50,
-    },
-    titleContent: {
-        fontStyle: 'italic',
-        fontSize: 25,
-        color: 'white'
-    },
-    boldText: {
-        fontWeight: "bold"
-    },
-
-    image:{
-        flex: 5,
-        justifyContent: "center",
-        alignSelf: "center",
-        resizeMode: "contain"
-    },
-    contenu: {
-      flex: 2,
-      alignItems: "center",
-      fontSize: 7,
-    },
-  });

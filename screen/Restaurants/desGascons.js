@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from "../../component/Title";
-import { StyleSheet, Text, View, ImageBackground, Image, StatusBar } from 'react-native';
+import { Text, View, ImageBackground, Image, StatusBar } from 'react-native';
 import Footer from '../../component/Footer';
 import styles from '../../services/Style';
 import Json from '../../services/text'
