@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
-import { images } from '../../constants/Images'
+import { Text, View, StatusBar, ImageBackground, Image } from 'react-native';
+import Json from '../../services/text'
 import React from 'react';
 import Footer from '../../component/Footer';
 import Title from '../../component/Title';
+import styles from '../../services/Style';
 
 export default function gastMicher(props) {
     return(<View style={styles.container}>
@@ -11,7 +12,7 @@ export default function gastMicher(props) {
                   <Title title="Gast Micher"></Title>
                     <View style={styles.image}>
                       <Image
-                      source={images.gastMicher.url}
+                      source={Json.ship.gastMich.img}
                       />
                     </View>
                   <View style={styles.contenu}>
@@ -34,62 +35,3 @@ export default function gastMicher(props) {
             </View>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-    },
-    main: {
-      flex: 5
-    },
-    buttons: {
-      flex: 4,
-    },
-    footer: {
-      flex: 1,
-      justifyContent: "flex-end",
-      alignItems: "center"
-    },
-
-    bg:{
-        flex: 1,
-        resizeMode: "cover",
-        justifyContent: "center"
-    },
-
-    image:{
-      marginLeft: "50%",
-      marginRight : "50%",
-      justifyContent:"center",
-      alignItems:"center",      // transform: "translate(-50%,-50%)"
-    },
-    title: {
-      flex: 1,
-      alignSelf: "center",
-      marginTop: 50,
-    },
-    titleContent: {
-        fontStyle: 'italic',
-        fontSize: 25,
-        color: 'white'
-    },
-    boldText: {
-        fontWeight: "bold"
-    },
-    contenu: {
-      flex: 2,
-      alignItems: "center",
-      fontSize: 7,
-    },
-
-    mainButton: {
-      flexDirection: "row",
-    },
-    buttons1: {
-      flexDirection: "row",
-    },
-    buttons2: {
-      flexDirection: "row",
-    }
-  });

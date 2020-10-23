@@ -4,6 +4,7 @@ import Button from '../component/Button';
 import { images } from '../constants/Images';
 import Footer from '../component/Footer';
 import Title from '../component/Title';
+import Vcard from '../component/Vcard';
 
 export default function bateaux(props) {
     return(<View style={styles.container}>
@@ -13,9 +14,7 @@ export default function bateaux(props) {
                   <Title title="Bateaux"></Title>
                     <View style={styles.contenu}>
                         <Text style={styles.boldText}>Toutes les eaux mènent à Thibault.</Text>
-                        <Text>06.63.99.99.78</Text>
-                        <Text>lebateaudethibault@gmail.com</Text>
-                        <Text>www.facebook.com/lebateaudethibault</Text>
+                        <Vcard></Vcard>
                     </View>
                 </View>
                 <View style={styles.buttons}>
@@ -46,12 +45,12 @@ export default function bateaux(props) {
                     <View style={styles.buttons2}>
                         <Button text="Contact"
                         image={images.ancre.url}
-                        screen={"contact"}
+                        screen={"Contact"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                         <Button text="Contact"
                         image={images.ancre.url}
-                        screen={"contact"}
+                        screen={"Contact"}
                         navigation={props.navigation}
                         style={styles.button}></Button>
                     </View>

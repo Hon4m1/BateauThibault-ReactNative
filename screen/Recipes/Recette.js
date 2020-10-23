@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View, StatusBar, ImageBackground, Image } from 'react-native';
+import { Text, View, StatusBar, ImageBackground, Image } from 'react-native';
 import React from 'react';
-import { images } from '../../constants/Images'
+import styles from '../../services/Style'
+import { images } from '../../constants/Images';
 import Footer from '../../component/Footer';
-import Title from '../../component/Title'
+import Title from '../../component/Title';
 
 export default function home(props) {
     return(<View style={styles.container}>
@@ -29,69 +30,9 @@ export default function home(props) {
                     <Text>Dans ce joli paysage</Text>
                     <Text>Moi je me balade en tongs</Text>
                 </View>
-                <View style={styles.subfooter}>
-                    <Text>Powered by blabla</Text>
-                </View>
                 <Footer></Footer>
                 <StatusBar style="auto" />
                 </ImageBackground>
             </View>
     )
 }
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-    },
-   main: {
-      flex: 5
-    },
-    buttons: {
-      flex: 4,
-    },
-
-    footer: {
-        flex: 3,
-        marginLeft: 10,
-        marginRight: 10,
-        alignItems: "center"
-    },
-
-    subfooter: {
-      flex: 1,
-      justifyContent: "flex-end",
-      alignItems: "center"
-    },
-
-    imagebackground:{
-        flex: 1,
-        resizeMode: "cover",
-        justifyContent: "center"
-    },
-    title: {
-      flex: 1,
-      alignSelf: "center",
-      marginTop: 50,
-    },
-    titleContent: {
-        fontStyle: 'italic',
-        fontSize: 25,
-        color: 'white'
-    },
-    boldText: {
-        fontWeight: "bold"
-    },
-
-    image:{
-        flex: 5,
-        justifyContent: "center",
-        alignItems: "center",
-        resizeMode: "contain"
-    },
-    contenu: {
-      flex: 2,
-      alignItems: "center",
-      justifyContent: "center",
-      fontSize: 7,
-    },
-  });

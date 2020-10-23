@@ -3,20 +3,18 @@ import React from 'react';
 import Button from '../component/Button';
 import Footer from '../component/Footer';
 import { images } from '../constants/Images';
+import Vcard from '../component/Vcard';
+import Title from '../component/Title';
 
 export default function recettes(props) {
     return(<View style={styles.container}>
               <ImageBackground source={require("../assets/background.png")} style={styles.image}>
 
                 <View style={styles.main}>
-                    <View style={styles.title}>
-                        <Text style={styles.titleContent}>Nos recettes</Text>
-                    </View>
+                    <Title title="Nos recettes"></Title>
                     <View style={styles.contenu}>
                         <Text style={styles.boldText}>Toutes les recettes du bateau de Thibault.</Text>
-                        <Text>06.63.99.99.78</Text>
-                        <Text>lebateaudethibault@gmail.com</Text>
-                        <Text>www.facebook.com/lebateaudethibault</Text>
+                        <Vcard></Vcard>
                     </View>
                 </View>
                 <View style={styles.buttons}>

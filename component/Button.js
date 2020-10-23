@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     },
     text: {
         marginLeft: 10,
+        color: "white",
     },
     image: {
         width: 60,

@@ -9,6 +9,7 @@ import Product from '../component/Product'
 import ProductCart from '../component/ProductCart'
 import Reducer from '../store/reducer/cartReducer'
 import { connect } from 'react-redux';
+import styles from '../services/Style'
 
 
 class Store extends React.Component {
@@ -24,8 +25,12 @@ class Store extends React.Component {
   render(){
     const { modalVisible } = this.state;
     return(<View style={styles.container}>
-      <ImageBackground source={require("../assets/background.png")} style={styles.image}>
+      <ImageBackground source={require("../assets/background.png")} style={styles.Pimage}>
       <HeadStore navigation={this.props.navigation}></HeadStore>
+
+      <View style={styles.header2}>
+                    <Text > Modifiez la quantité en tapant sur chaque produit</Text>
+      </View>
 
       <Modal
         animationType="slide"
@@ -82,6 +87,7 @@ class Store extends React.Component {
       </Modal>
 
         <Text style={{textAlign: "center"}}> Choisissez vos produits</Text>
+
         <View style={{flex:1}}>
           {this.props.products.map((value,index)=>{
             return <ProductCart key={index} item={value}/>
@@ -107,39 +113,3 @@ const mapStateToProps = state => {
 };
 
 export default connect(mapStateToProps)(Store);
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-    },
-    main: {
-      flex: 5
-    },
-    buttons: {
-      flex: 4,
-    },
-    image:{
-        flex: 1,
-        resizeMode: "cover",
-        justifyContent: "center"
-    },
-    boldText: {
-        fontWeight: "bold"
-    },
-    contenu: {
-      flex: 2,
-      alignItems: "center",
-      fontSize: 7,
-    },
-
-    mainButton: {
-      flexDirection: "row",
-    },
-    buttons1: {
-      flexDirection: "row",
-    },
-    buttons2: {
-      flexDirection: "row",
-    }
-  });

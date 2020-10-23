@@ -1,17 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Button, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import { NavigationContainer, StackActions } from '@react-navigation/native'
+import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
+import { Provider } from 'react-redux';
+
 import Home from './screen/Home'
-import { Provider, ReactReduxContext } from 'react-redux';
-/*import (Provider) from 'react-redux'
-import store from "./store/configurestore.js"
-import { SafeAreaProvider } from */
 import Products from './screen/Products'
 import productsList from './screen/productsList'
 import Bateaux from './screen/Bateaux'
 import Recettes from './screen/Recettes'
+import Contact from './screen/Contact'
 import Restaurants from './screen/Restaurants'
 import Store from './screen/Store'
 
@@ -31,8 +28,6 @@ import Bar from './screen/Recipes/Bar'
 import StJacques from './screen/Recipes/StJacques'
 import Recette from './screen/Recipes/Recette'
 import TourteauLinguine from './screen/Recipes/TourteauLinguine'
-
-import Contact from './screen/Contact'
 
 import store  from './store/configureStore'
 
@@ -72,6 +67,7 @@ export default function App() {
             <Stack.Screen name="villa9Trois" component={ villa9Trois } />
 
             <Stack.Screen name="Contact" component={ Contact } />
+            <Stack.Screen name="Partenaire" component={ Contact } />
           </Stack.Navigator>
         </NavigationContainer>
       </Provider>

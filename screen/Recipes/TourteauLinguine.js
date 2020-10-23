@@ -3,6 +3,7 @@ import React from 'react';
 import Title from '../../component/Title'
 import Footer from '../../component/Footer'
 import { images } from '../../constants/Images'
+import styles from '../../services/Style'
 
 
 export default function TourteauLinguine(props) {
@@ -16,11 +17,11 @@ export default function TourteauLinguine(props) {
                     style={styles.image}
                     source = {images.poulpe.url}/>
 
-                    <View style={styles.contenu}>
+                    <View style={styles.Rcontenu}>
                         <Text>XXX YYY ZZZ</Text>
                     </View>
                 </View>
-                <View style={styles.footer}>
+                <View style={styles.Rcontenu}>
                     <Text>Qu'il est chaud le Soleil</Text>
                     <Text>Quand nous sommes en vacances</Text>
                     <Text>Y a d'la joie, des hirondelles</Text>
@@ -36,60 +37,3 @@ export default function TourteauLinguine(props) {
             </View>
     )
 }
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-    },
-   main: {
-      flex: 5
-    },
-    buttons: {
-      flex: 4,
-    },
-
-    footer: {
-        flex: 3,
-        marginLeft: 10,
-        marginRight: 10,
-        alignItems: "center"
-    },
-
-    subfooter: {
-      flex: 1,
-      justifyContent: "flex-end",
-      alignItems: "center"
-    },
-
-    imagebackground:{
-        flex: 1,
-        resizeMode: "cover",
-        justifyContent: "center"
-    },
-    title: {
-      flex: 1,
-      alignSelf: "center",
-      marginTop: 50,
-    },
-    titleContent: {
-        fontStyle: 'italic',
-        fontSize: 25,
-        color: 'white'
-    },
-    boldText: {
-        fontWeight: "bold"
-    },
-
-    image:{
-        flex: 5,
-        justifyContent: "center",
-        alignItems: "center",
-        resizeMode: "contain"
-    },
-    contenu: {
-      flex: 2,
-      alignItems: "center",
-      justifyContent: "center",
-      fontSize: 7,
-    },
-  });
