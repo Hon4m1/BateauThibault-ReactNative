@@ -7,21 +7,21 @@ import styles from '../../services/Style'
 
 
 export default function TourteauLinguine(props) {
-    return(<View style={styles.Rcontainer}>
+    return(<View style={styles.container}>
               <ImageBackground source={require("../../assets/background.png")} style={styles.imagebackground}>
 
-                <View style={styles.Rmain}>
+                <View style={styles.main}>
                     <Title title="Tourteau Linguine"></Title>
                     
                     <Image 
-                    style={styles.Rimage}
+                    style={styles.image}
                     source = {images.poulpe.url}/>
 
                     <View style={styles.Rcontenu}>
                         <Text>XXX YYY ZZZ</Text>
                     </View>
                 </View>
-                <View style={styles.Rtext}>
+                <View style={styles.Rcontenu}>
                     <Text>Qu'il est chaud le Soleil</Text>
                     <Text>Quand nous sommes en vacances</Text>
                     <Text>Y a d'la joie, des hirondelles</Text>

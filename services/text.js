@@ -27,8 +27,8 @@ export default text ={
                         "Maman lit dans la chaise longue",
                         "Dans ce joli paysage",
                         "Moi je me balade en tongs"], 
-        "description2" : ["",
-            ""]
+        "description2" : ["Que du bonheur!",
+            "Que du bonheur!"]
     },
     "deLaBrise" : {
         "Title" : "De la Brise",
@@ -42,8 +42,8 @@ export default text ={
                         "Maman lit dans la chaise longue",
                         "Dans ce joli paysage",
                         "Moi je me balade en tongs"], 
-        "description2" : ["",
-            ""]
+        "description2" : ["Que du bonheur!",
+            "Que du bonheur!"]
     },
     "gastMich" : {
         "Title" : "Gast Mich",
@@ -57,8 +57,8 @@ export default text ={
                         "Maman lit dans la chaise longue",
                         "Dans ce joli paysage",
                         "Moi je me balade en tongs"], 
-        "description2" : ["",
-            ""]
+        "description2" : ["Que du bonheur!",
+            "Que du bonheur!"]
     }    
    },
    "restaurants" : {
@@ -74,8 +74,8 @@ export default text ={
                         "Maman lit dans la chaise longue",
                         "Dans ce joli paysage",
                         "Moi je me balade en tongs"], 
-        "description2" : ["",
-            ""]
+        "description2" : ["Que du bonheur!",
+            "Que du bonheur!"]
     },
     "desGascons" : {
         "Title" : "Bistrot des Gascons",
@@ -89,8 +89,8 @@ export default text ={
                         "Maman lit dans la chaise longue",
                         "Dans ce joli paysage",
                         "Moi je me balade en tongs"], 
-        "description2" : ["",
-            ""]
+        "description2" : ["Que du bonheur!",
+            "Que du bonheur!"]
     },
     "fousDeLIle" : {
         "Title" : "Les fous de l'île",
@@ -104,8 +104,8 @@ export default text ={
                         "Maman lit dans la chaise longue",
                         "Dans ce joli paysage",
                         "Moi je me balade en tongs"], 
-        "description2" : ["",
-            ""]
+        "description2" : ["Que du bonheur!",
+            "Que du bonheur!"]
     },
     "villa9Trois" : {
         "Title" : "Villa 9-Trois",
@@ -119,8 +119,8 @@ export default text ={
                         "Maman lit dans la chaise longue",
                         "Dans ce joli paysage",
                         "Moi je me balade en tongs"], 
-        "description2" : ["",
-            ""]
+        "description2" : ["Que du bonheur!",
+            "Que du bonheur!"]
     },
     "duSommelier" : {
         "Title" : "Bistrot du Sommelier",
@@ -134,9 +134,10 @@ export default text ={
                         "Maman lit dans la chaise longue",
                         "Dans ce joli paysage",
                         "Moi je me balade en tongs"], 
-        "description2" : ["",
-            ""]
-    }        
+       "description2" : ["Que du bonheur!",
+            "Que du bonheur!"]
+    },
+    "partenaire" : "Tous les restaurants partenaires avec le bateu de Thibault"        
    },
    "recipes" : {
     "homard" : {
@@ -214,7 +215,7 @@ export default text ={
         "Maman lit dans la chaise longue",
         "Dans ce joli paysage",
         "Moi je me balade en tongs"], 
-    "description2" : ["",
-        ""]
+    "description2" : ["Que du bonheur!",
+            "Que du bonheur!"]
    }
 }
