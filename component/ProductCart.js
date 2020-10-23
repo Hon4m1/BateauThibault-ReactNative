@@ -33,7 +33,7 @@ class ProductCart extends React.Component {
   render() {
     const { modalVisible } = this.state;
     return (
-      <View style={styles.centeredView}>
+      <View>
         <Modal
           animationType="slide"
           transparent={true}

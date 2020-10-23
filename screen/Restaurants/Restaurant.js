@@ -10,7 +10,7 @@ export default function restaurant(props, place){
             <Title title={place}></Title>
             <image style={styles.img} src={require({props})}></image>
             <View>
-                <Text>{Json.restaurants.}</Text>
+                <Text>{Json.restaurants.legend}</Text>
                 <Text>Qu'il est chaud le soleil</Text>
                 <Text>Quand nous sommes en vacances</Text>
                 <Text>Y a d'la joie, des hirondelles</Text>

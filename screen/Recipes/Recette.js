@@ -16,7 +16,7 @@ export default function home(props) {
                     style={styles.image}
                     source = {images.poulpe.url}/>
 
-                    <View style={styles.contenu}>
+                    <View style={styles.Rcontenu}>
                         <Text>XXX YYY ZZZ</Text>
                     </View>
                 </View>
