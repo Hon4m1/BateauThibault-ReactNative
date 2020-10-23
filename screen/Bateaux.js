@@ -5,14 +5,15 @@ import { images } from '../constants/Images';
 import Footer from '../component/Footer';
 import Title from '../component/Title';
 import Vcard from '../component/Vcard';
+import styles from '../services/Style';
 
 export default function bateaux(props) {
     return(<View style={styles.container}>
-              <ImageBackground source={require("../assets/background.png")} style={styles.image}>
+              <ImageBackground source={require("../assets/background.png")} style={styles.Pimage}>
 
                 <View style={styles.main}>
                   <Title title="Bateaux"></Title>
-                    <View style={styles.contenu}>
+                    <View style={styles.Rcontenu}>
                         <Text style={styles.boldText}>Toutes les eaux mènent à Thibault.</Text>
                         <Vcard></Vcard>
                     </View>
@@ -61,55 +62,3 @@ export default function bateaux(props) {
             </View>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-    },
-    main: {
-      flex: 5
-    },
-    buttons: {
-      flex: 4,
-    },
-    footer: {
-      flex: 1,
-      justifyContent: "flex-end",
-      alignItems: "center"
-    },
-
-    image:{
-        flex: 1,
-        resizeMode: "cover",
-        justifyContent: "center"
-    },
-    title: {
-      flex: 1,
-      alignSelf: "center",
-      marginTop: 50,
-    },
-    titleContent: {
-        fontStyle: 'italic',
-        fontSize: 25,
-        color: 'white'
-    },
-    boldText: {
-        fontWeight: "bold"
-    },
-    contenu: {
-      flex: 2,
-      alignItems: "center",
-      fontSize: 7,
-    },
-
-    mainButton: {
-      flexDirection: "row",
-    },
-    buttons1: {
-      flexDirection: "row",
-    },
-    buttons2: {
-      flexDirection: "row",
-    }
-  });

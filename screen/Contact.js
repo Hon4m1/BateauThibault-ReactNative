@@ -33,5 +33,4 @@ export default function Contact(props) {
           <StatusBar style="auto" />
           </ImageBackground>
       </View>
-)
-}
+)}
